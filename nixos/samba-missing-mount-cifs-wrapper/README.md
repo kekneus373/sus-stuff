@@ -1,3 +1,5 @@
+# My first contribution
+
 In July, when I first tried NixOS, I experienced a bug where I can't mount Samba shares as a user. I asked for help, where you can find all the details and how it was resolved: [NixOS Discourse post](https://discourse.nixos.org/t/cant-mount-samba-share-as-a-user/49171?u=kekneus373)
 I said that I could test the PR in a week. Of course something must have gone wrong...
 
