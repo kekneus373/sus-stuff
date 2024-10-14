@@ -8,4 +8,5 @@ I said that I could test the PR in a week. Of course something must have gone wr
 3. In the end, I gave up. Had a lot of other, more important work to do.
 
 I'm sorry that I started the entire thing but then just disappeared. Today, I've been curious was it simple or not, so [I asked ChatGPT](https://chatgpt.com/share/670c21eb-2604-8001-8ad7-1f2dd011f3e7). I think it tells even better than [the official manual](https://nixos.org/manual/nixos/stable/index.html#sec-nixos-tests), where I didn't understand even one word :moyai::moyai::moyai:
+
 I hope this artictle was interesting for you ) . Have a nice day and take care :grinning:
