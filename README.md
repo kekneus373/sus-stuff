@@ -1,9 +1,9 @@
 **Everything collection 📚**
 ==========================
 
-A collection of scripts for fixing repeating issues, starting applications; OS-specific quirks. Also, some contributions here too. Maybe you'll find my work useful! 🙂
+A collection of scripts for fixing repetetive issues, starting applications, OS-specific quirks. Also, some contributions here too. Maybe you'll find it useful! 🙂
 
-### Most files from this repo were moved to my Gists. [Check 'em out](https://gist.github.com/kekneus373)
+### ⚠️ Most files from this repo were moved to my Gists. [Check 'em out](https://gist.github.com/kekneus373)
 
 **Contents (what's left)**
 ------------
