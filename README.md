@@ -16,5 +16,5 @@ A collection of scripts for fixing repeating issues, starting applications; OS-s
 ----------
 
 * My NixOS configs from 2 machines:
-  * main hp laptop [ ]
-  * c2q q9550 pc [ ]
+  - [ ] main hp laptop
+  - [ ] q9550 pc
