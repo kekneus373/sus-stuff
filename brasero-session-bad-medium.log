@@ -1,0 +1,1868 @@
+Checking session consistency (brasero_burn_check_session_consistency brasero-burn.c:1739)
+BraseroBurnURI called brasero_job_get_action
+BraseroBurnURI called brasero_job_get_action
+BraseroBurnURI called brasero_job_set_output_size_for_current_track
+BraseroBurnURI stopping
+BraseroBurnURI called brasero_job_get_action
+BraseroBurnURI called brasero_job_get_session_output_size
+BraseroBurnURI output set (IMAGE) image = /tmp/brasero_tmp_LNLZM2.bin toc = /tmp/brasero_tmp_LNLZM2.cue
+BraseroBurnURI called brasero_job_get_session_output_size
+BraseroBurnURI called brasero_job_get_action
+BraseroBurnURI called brasero_job_get_current_track
+BraseroBurnURI no burn:// URI found
+BraseroBurnURI stopping
+BraseroLocalTrack called brasero_job_get_action
+BraseroLocalTrack called brasero_job_get_action
+BraseroLocalTrack called brasero_job_set_output_size_for_current_track
+BraseroLocalTrack stopping
+BraseroLocalTrack called brasero_job_get_action
+BraseroLocalTrack called brasero_job_get_session_output_size
+BraseroLocalTrack output set (IMAGE) image = /tmp/brasero_tmp_X8QZM2.bin toc = /tmp/brasero_tmp_X8QZM2.cue
+BraseroLocalTrack called brasero_job_get_session_output_size
+BraseroLocalTrack called brasero_job_get_action
+BraseroLocalTrack called brasero_job_get_current_track
+BraseroLocalTrack no remote URIs
+BraseroLocalTrack stopping
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao getting varg
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao got varg:
+BraseroCdrdao deactivating
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao getting varg
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_input_type
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao called brasero_job_get_bus_target_lun
+BraseroCdrdao called brasero_job_get_flags
+BraseroCdrdao called brasero_job_get_flags
+BraseroCdrdao called brasero_job_get_speed
+BraseroCdrdao called brasero_job_set_use_average_rate
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao got varg:
+	cdrdao
+	write
+	--device
+	/dev/sr0
+	-n
+	-v
+	2
+	--speed
+	10
+	/home/amoba/Temp/svcd-penok-2022-3.cue
+BraseroCdrdao Launching command in /home/amoba/Temp
+BraseroCdrdao called brasero_job_get_fd_in
+BraseroCdrdao called brasero_job_get_fd_out
+BraseroCdrdao stderr: WARNING: Environment variable 'HOME' not defined- cannot read .cdrdao.
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Cdrdao version 1.2.4 - (C) Andreas Mueller <andreas@daneb.de>
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: /dev/sr0: TSSTcorp CDDVDW SN-208FB	Rev: FB01
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Using driver: Generic SCSI-3/MMC - Version 2.0 (options 0x0000)
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: 
+BraseroCdrdao stderr: Starting write at speed 10...
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Process can be aborted with QUIT signal (usually CTRL-\).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: WARNING: No super user permission to setup real time scheduling.
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Turning BURN-Proof on
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Enabling JustLink.
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Executing power calibration...
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Power calibration successful.
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Writing track 01 (mode MODE2_RAW/MODE2_RAW )...
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao stderr: Writing track 02 (mode MODE2_RAW/MODE2_RAW )...
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao stderr: Wrote 1 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 2 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 3 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 4 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 5 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 6 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 7 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 8 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 9 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 10 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 11 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 12 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 13 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 14 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 15 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 16 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 17 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 18 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 19 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 20 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 21 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 22 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 23 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 24 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 25 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 26 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 27 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 28 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 29 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 30 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 31 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 32 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 33 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 34 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 35 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 36 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 37 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 38 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 39 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 40 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 41 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 42 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 43 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 44 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 45 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 46 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 47 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 48 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 49 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 50 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 51 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 52 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 53 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 54 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 55 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 56 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 57 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 58 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 59 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 60 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 61 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 62 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 63 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 64 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 65 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 66 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 67 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 68 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 69 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 70 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 71 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 72 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 73 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 74 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 75 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 76 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 77 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 78 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 79 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 80 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 81 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 82 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 83 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 84 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 85 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 86 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 87 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 88 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 89 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 90 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 91 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 92 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 93 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 94 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 95 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 96 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 97 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 98 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 99 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 100 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 101 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 102 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 103 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 104 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 105 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 106 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 107 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 108 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 109 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 110 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 111 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 112 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 113 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 114 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 115 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 116 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 117 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 118 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 119 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 120 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 121 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 122 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 123 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 124 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 125 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 126 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 127 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 128 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 129 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 130 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 131 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 132 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 133 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 134 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 135 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 136 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 137 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 138 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 139 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 140 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 141 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 142 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 143 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 144 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 145 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 146 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 147 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 148 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 149 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 150 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 151 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 152 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 153 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 154 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 155 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 156 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 157 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 158 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 159 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 160 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 161 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 162 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 163 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 164 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 165 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 166 of 571 MB (Buffers 100%  99%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 167 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 168 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 169 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 170 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 171 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 172 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 173 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 174 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 175 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 176 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 177 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 178 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 179 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 180 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 181 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 182 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 183 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 184 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 185 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 186 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 187 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 188 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 189 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 190 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 191 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 192 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 193 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 194 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 195 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 196 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 197 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 198 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 199 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 200 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 201 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 202 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 203 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 204 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 205 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 206 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 207 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 208 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 209 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 210 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 211 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 212 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 213 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 214 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 215 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 216 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 217 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 218 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 219 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 220 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 221 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 222 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 223 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 224 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 225 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 226 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 227 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 228 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 229 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 230 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 231 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 232 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 233 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 234 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 235 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 236 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 237 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 238 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 239 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 240 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 241 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 242 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 243 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 244 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 245 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 246 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 247 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 248 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 249 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 250 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 251 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 252 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 253 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 254 of 571 MB (Buffers 100%  99%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 255 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 256 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 257 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 258 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 259 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 260 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 261 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 262 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 263 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 264 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 265 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 266 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 267 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 268 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 269 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 270 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 271 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 272 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 273 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 274 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 275 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 276 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 277 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 278 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 279 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 280 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 281 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 282 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 283 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 284 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 285 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 286 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 287 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 288 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 289 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 290 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 291 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 292 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 293 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 294 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 295 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 296 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 297 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 298 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 299 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 300 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 301 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 302 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 303 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 304 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 305 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 306 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 307 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 308 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 309 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 310 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 311 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 312 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 313 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 314 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 315 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 316 of 571 MB (Buffers 100%  99%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 317 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 318 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 319 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 320 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 321 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 322 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 323 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 324 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 325 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 326 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 327 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 328 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 329 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 330 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 331 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 332 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 333 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 334 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 335 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 336 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 337 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 338 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 339 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 340 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 341 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 342 of 571 MB (Buffers 100%  99%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 343 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 344 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 345 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 346 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 347 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 348 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 349 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 350 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 351 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 352 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 353 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 354 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 355 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 356 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 357 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 358 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 359 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 360 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 361 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 362 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 363 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 364 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 365 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 366 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 367 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 368 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 369 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 370 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 371 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 372 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 373 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 374 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 375 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 376 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 377 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 378 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 379 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 380 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 381 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 382 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 383 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 384 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 385 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 386 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 387 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 388 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 389 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 390 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 391 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 392 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 393 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 394 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 395 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 396 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 397 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 398 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 399 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 400 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 401 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 402 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 403 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 404 of 571 MB (Buffers 100%  99%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 405 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 406 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 407 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 408 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 409 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 410 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 411 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 412 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 413 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 414 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 415 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 416 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 417 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 418 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 419 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 420 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 421 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 422 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 423 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 424 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 425 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 426 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 427 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 428 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 429 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: Wrote 430 of 571 MB (Buffers 100% 100%).
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_set_dangerous
+BraseroCdrdao called brasero_job_set_current_action
+BraseroCdrdao stderr: [valid=0] Info fld=0, Deferred 
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: SCSI command failed: sense key: 0x03: Medium Error
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Additional sense indicates: Write error
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: Raw sense data: 0x71 0x00 0x03 0x00 0x00 0x00 0x00 0x0a 0x00 0x00 
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: 0x00 0x00 0x0c 0x00 0x00 0x00 
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: ERROR: Write data failed.
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: ERROR: Writing failed - buffer under run?
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: ERROR: Writing failed.
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_action
+BraseroCdrdao called brasero_job_get_current_track
+BraseroCdrdao stderr: HUP
+BraseroCdrdao process finished with status 1
+BraseroCdrdao called brasero_job_error
+BraseroCdrdao finished with an error
+BraseroCdrdao asked to stop because of an error
+	error		= 0
+	message	= "no message"
+BraseroCdrdao stopping
+Session error : unknown (brasero_burn_record brasero-burn.c:2859)
