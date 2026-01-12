@@ -1,0 +1,9 @@
+[Unit]
+Description=Mpris proxy
+After=network.target sound.target
+
+[Service]
+ExecStart=/usr/bin/mpris-proxy
+
+[Install]
+WantedBy=default.target
