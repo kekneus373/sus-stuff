@@ -1,0 +1,15 @@
+<effect id="9-9-blur" tag="avfilter.avgblur" type="customVideo">
+ <name>9-9-blur</name>
+ <description>Apply average blur filter. </description>
+ <author>libavfilter</author>
+ <parameter default="1" factor="1" max="500" min="1" name="av.sizeX" type="animated" value="0=9">
+  <name>X size</name>
+ </parameter>
+ <parameter default="0" factor="1" max="500" min="0" name="av.sizeY" type="animated" value="0=9">
+  <name>Y size</name>
+ </parameter>
+ <parameter default="7" name="av.planes" paramlist="0;1;2;3;4;5;6;7" type="list" value="7">
+  <paramlistdisplay>Alpha,Y,U,V,Red,Green,Blue,All</paramlistdisplay>
+  <name>Planes</name>
+ </parameter>
+</effect>

@@ -1,0 +1,21 @@
+<effect id="pitch-arkadii-videourok" tag="ladspa.97920" type="customAudio">
+ <name>pitch-arkadii-videourok</name>
+ <parameter decimals="3" default="0.000000" max="100.000000" min="-100.000000" name="1" type="constant" value="-5.6">
+  <name>Cents</name>
+ </parameter>
+ <parameter default="0" max="12" min="-12" name="2" type="constant" value="0">
+  <name>Semitones</name>
+ </parameter>
+ <parameter default="0" max="2" min="-2" name="3" type="constant" value="0">
+  <name>Octaves</name>
+ </parameter>
+ <parameter default="0" max="1" min="0" name="4" type="bool" value="0">
+  <name>Formant Preserving</name>
+ </parameter>
+ <parameter decimals="3" default="0.000000" max="1.000000" min="0.000000" name="5" type="constant" value="0">
+  <name>Wet-Dry Mix</name>
+ </parameter>
+ <parameter decimals="3" default="1.000000" max="1.000000" min="0.000000" name="wetness" type="constant" value="1">
+  <name>Wet/Dry</name>
+ </parameter>
+</effect>

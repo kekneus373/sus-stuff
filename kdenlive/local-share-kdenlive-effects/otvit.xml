@@ -1,0 +1,17 @@
+<effect id="otvit" tag="rbpitch" type="customAudio">
+ <name>otvit</name>
+ <description>Adjust the audio pitch using the Rubberband library.</description>
+ <author>Meltytech, LLC</author>
+ <parameter decimals="3" default="1.0" max="10" min="0.1" name="pitchscale" type="constant" value="0.85">
+  <name>Pitch Scale</name>
+  <comment>The pitch scaling ratio. This is the ratio of target frequency to source frequency. For example, a ratio of 2.0 would shift up by one octave; 0.5 down by one octave; or 1.0 leave the pitch unaffected. To put this in musical terms, a pitch scaling ratio corresponding to a shift of o octaves (where o is positive for an upwards shift and negative for downwards) is: f = pow(2.0, o). Overrides octaveshift.</comment>
+ </parameter>
+ <parameter default="0" name="stretch" type="bool" value="0">
+  <name>Stretch</name>
+  <comment>Stretch the audio to fill the requested samples. This option will have no effect if the requested sample size is the same as the received sample size.</comment>
+ </parameter>
+ <parameter default="0" max="2000" min="0" name="latency" suffix="ms" type="constant" value="47.3958">
+  <name>Latency</name>
+  <comment>The amount of delay for each sample from the input to the output.</comment>
+ </parameter>
+</effect>

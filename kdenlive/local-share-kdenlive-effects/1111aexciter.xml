@@ -1,0 +1,35 @@
+<effect type="customAudio" tag="avfilter.aexciter" id="1111aexciter">
+ <name>1111aexciter</name>
+ <parameter type="constant" name="av.level_in" decimals="3" max="64.000000" min="0.000000" value="14.464" default="1.000000">
+  <name>av.level_in</name>
+  <comment>set level in</comment>
+ </parameter>
+ <parameter type="constant" name="av.level_out" decimals="3" max="64.000000" min="0.000000" value="1.984" default="1.000000">
+  <name>av.level_out</name>
+  <comment>set level out</comment>
+ </parameter>
+ <parameter type="constant" name="av.amount" decimals="3" max="64.000000" min="0.000000" value="1" default="1.000000">
+  <name>av.amount</name>
+  <comment>set amount</comment>
+ </parameter>
+ <parameter type="constant" name="av.drive" decimals="3" max="10.000000" min="0.100000" value="8.5" default="8.500000">
+  <name>av.drive</name>
+  <comment>set harmonics</comment>
+ </parameter>
+ <parameter type="constant" name="av.blend" decimals="3" max="10.000000" min="-10.000000" value="0" default="0.000000">
+  <name>av.blend</name>
+  <comment>set blend harmonics</comment>
+ </parameter>
+ <parameter type="constant" name="av.freq" decimals="3" max="12000.000000" min="2000.000000" value="7500" default="7500.000000">
+  <name>av.freq</name>
+  <comment>set scope</comment>
+ </parameter>
+ <parameter type="constant" name="av.ceil" decimals="3" max="20000.000000" min="9999.000000" value="9999" default="9999.000000">
+  <name>av.ceil</name>
+  <comment>set ceiling</comment>
+ </parameter>
+ <parameter type="fixed" name="position" value="frame">
+  <name>position</name>
+  <comment>The MLT position value to set on avfilter frames</comment>
+ </parameter>
+</effect>

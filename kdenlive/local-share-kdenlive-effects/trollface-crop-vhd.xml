@@ -1,0 +1,17 @@
+<effect id="trollface-crop-vhd" tag="qtcrop" type="customVideo">
+ <name>trollface-crop-vhd</name>
+ <description>This filter crops the image to a rounded rectangle or circle by padding it with a color.</description>
+ <author>Dan Dennedy</author>
+ <parameter default="0 0 %width %height" name="rect" opacity="false" type="animatedrect" value="0=0 669 720 611">
+  <name>Rectangle</name>
+ </parameter>
+ <parameter decimals="2" default="0" max="1" min="0" name="radius" type="animated" value="0=0">
+  <name>Radius</name>
+ </parameter>
+ <parameter default="0" name="circle" type="bool" value="0">
+  <name>Circle</name>
+ </parameter>
+ <parameter alpha="1" default="0x00000000" name="color" type="color" value="0=0x00000000">
+  <name>Padding Color</name>
+ </parameter>
+</effect>

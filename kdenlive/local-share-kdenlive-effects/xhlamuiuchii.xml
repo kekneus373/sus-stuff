@@ -1,0 +1,31 @@
+<effect id="xhlamuiuchii" tag="lift_gamma_gain" type="customVideo">
+ <name>xhlamuiuchii</name>
+ <author>Brian Matherly</author>
+ <parameter default="0" factor="100" max="500" min="0" name="lift_r" type="colorwheel" value="599=0">
+  <name>Lift: Red</name>
+ </parameter>
+ <parameter default="0" factor="100" max="500" min="0" name="lift_g" type="colorwheel" value="599=0">
+  <name>Lift: Green</name>
+ </parameter>
+ <parameter default="0" factor="100" max="500" min="0" name="lift_b" type="colorwheel" value="599=0">
+  <name>Lift: Blue</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gamma_r" type="colorwheel" value="599=1.41668">
+  <name>Gamma: Red</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gamma_g" type="colorwheel" value="599=1.41668">
+  <name>Gamma: Green</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gamma_b" type="colorwheel" value="599=1.41668">
+  <name>Gamma: Blue</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gain_r" type="colorwheel" value="599=1.69046">
+  <name>Gain: Red</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gain_g" type="colorwheel" value="599=1.69046">
+  <name>Gain: Green</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gain_b" type="colorwheel" value="599=1.69046">
+  <name>Gain: Blue</name>
+ </parameter>
+</effect>

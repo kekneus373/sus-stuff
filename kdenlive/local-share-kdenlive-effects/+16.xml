@@ -1,0 +1,8 @@
+<effect id="+16" tag="volume" type="customAudio" version="0.2">
+ <name>+16</name>
+ <description>Adjust audio volume with keyframes</description>
+ <author>Dan Dennedy</author>
+ <parameter default="0" max="50" min="-100" name="level" scale="-1" suffix="dB" type="animated" value="0=16" visualmax="50" visualmin="-50">
+  <name>Gain</name>
+ </parameter>
+</effect>

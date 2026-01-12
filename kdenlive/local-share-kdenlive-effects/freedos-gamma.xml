@@ -1,0 +1,31 @@
+<effect id="freedos-gamma" tag="lift_gamma_gain" type="customVideo">
+ <name>freedos-gamma</name>
+ <author>Brian Matherly</author>
+ <parameter default="0" factor="100" max="500" min="0" name="lift_r" type="colorwheel" value="1680=0.219501">
+  <name>Lift: Red</name>
+ </parameter>
+ <parameter default="0" factor="100" max="500" min="0" name="lift_g" type="colorwheel" value="1680=-1">
+  <name>Lift: Green</name>
+ </parameter>
+ <parameter default="0" factor="100" max="500" min="0" name="lift_b" type="colorwheel" value="1680=-0.230488">
+  <name>Lift: Blue</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gamma_r" type="colorwheel" value="1680=1">
+  <name>Gamma: Red</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gamma_g" type="colorwheel" value="1680=1">
+  <name>Gamma: Green</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gamma_b" type="colorwheel" value="1680=1">
+  <name>Gamma: Blue</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gain_r" type="colorwheel" value="1680=1">
+  <name>Gain: Red</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gain_g" type="colorwheel" value="1680=1">
+  <name>Gain: Green</name>
+ </parameter>
+ <parameter default="1" factor="100" max="500" min="0" name="gain_b" type="colorwheel" value="1680=1">
+  <name>Gain: Blue</name>
+ </parameter>
+</effect>

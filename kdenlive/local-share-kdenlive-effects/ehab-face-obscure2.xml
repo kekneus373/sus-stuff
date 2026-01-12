@@ -1,0 +1,8 @@
+<effect id="ehab-face-obscure2" tag="obscure" type="customVideo">
+ <name>ehab-face-obscure2</name>
+ <description>Hide a region of the clip</description>
+ <author>Charles Yates</author>
+ <parameter default="40% 40% 20% 20%" fixed="1" name="start" opacity="false" type="geometry" value="0 315 854 46">
+  <name>Region</name>
+ </parameter>
+</effect>

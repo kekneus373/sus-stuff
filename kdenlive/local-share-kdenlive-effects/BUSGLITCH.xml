@@ -1,0 +1,17 @@
+<effect id="BUSGLITCH" tag="frei0r.glitch0r" type="customVideo">
+ <name>BUSGLITCH</name>
+ <description>Adds glitches and block shifting</description>
+ <author>IDENT Software</author>
+ <parameter default="0" factor="1000" max="1000" min="0" name="0" type="animated" value="8291=0.5">
+  <name>Glitch frequency</name>
+ </parameter>
+ <parameter default="0.49913" factor="1000" max="1000" min="0" name="1" type="animated" value="8291=0.49913">
+  <name>Block height</name>
+ </parameter>
+ <parameter default="0.499305" factor="1000" max="1000" min="0" name="2" type="animated" value="8291=0.499305">
+  <name>Shift intensity</name>
+ </parameter>
+ <parameter default="0" factor="1000" max="1000" min="0" name="3" type="animated" value="8291=0">
+  <name>Color glitching intensity</name>
+ </parameter>
+</effect>

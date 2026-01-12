@@ -1,0 +1,8 @@
+<effect id="bf11-studio-obscure" tag="obscure" type="customVideo">
+ <name>bf11-studio-obscure</name>
+ <description>Hide a region of the clip</description>
+ <author>Charles Yates</author>
+ <parameter default="40% 40% 20% 20%" fixed="1" name="start" opacity="false" type="geometry" value="658 144 205 225">
+  <name>Region</name>
+ </parameter>
+</effect>

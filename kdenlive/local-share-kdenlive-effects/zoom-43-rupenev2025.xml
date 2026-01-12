@@ -1,0 +1,23 @@
+<effect context="nomovit" id="zoom-43-rupenev2025" tag="affine" type="customVideo">
+ <name>zoom-43-rupenev2025</name>
+ <description>Adjust size and position of clip</description>
+ <author>Charles Yates</author>
+ <parameter default="0 0 %width %height" name="transition.rect" opacity="false" type="animatedrect" value="0=-175 -133 1379 1034">
+  <name>Rectangle</name>
+ </parameter>
+ <parameter default="0" name="transition.distort" type="bool" value="0">
+  <name>Distort</name>
+ </parameter>
+ <parameter default="0" name="use_normalised" type="bool" value="0">
+  <name>Normalise</name>
+ </parameter>
+ <parameter alpha="1" default="0x00000000" name="producer.resource" type="fixedcolor" value="0x00000000">
+  <name>Background Color</name>
+ </parameter>
+ <parameter default="1" name="transition.repeat_off" type="bool" value="1">
+  <name>Disable repeat</name>
+ </parameter>
+ <parameter default="1" name="transition.mirror_off" type="bool" value="1">
+  <name>Disable mirror</name>
+ </parameter>
+</effect>
