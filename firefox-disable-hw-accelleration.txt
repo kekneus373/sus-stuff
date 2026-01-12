@@ -1,0 +1,2 @@
+gfx.webrender.software	true
+media.hardware-video-decoding.enabled	false

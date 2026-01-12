@@ -1,0 +1,1 @@
+To mount a 9p filesystem using virtio, you can use the command: `mount -t 9p -o trans=virtio,mount_tag=<your_mount_tag> <your_mount_tag> <mount_point>`, where `<your_mount_tag>` is the tag you assigned to the shared directory and `<mount_point>` is the directory where you want to mount it. Make sure the directory exists before running the command.
