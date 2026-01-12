@@ -1,0 +1,27 @@
+Nov 06 00:01:02 fedora-acer audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg>
+Nov 06 00:02:04 fedora-acer kernel: mce: [Hardware Error]: Machine check events logged
+Nov 06 00:02:04 fedora-acer mcelog[748]: Hardware event. This is not a software error.
+Nov 06 00:02:04 fedora-acer mcelog[748]: MCE 0
+Nov 06 00:02:04 fedora-acer mcelog[748]: CPU 0 BANK 2
+Nov 06 00:02:04 fedora-acer mcelog[748]: ADDR 15531340
+Nov 06 00:02:04 fedora-acer mcelog[748]: TIME 1730844124 Wed Nov  6 00:02:04 2024
+Nov 06 00:02:04 fedora-acer mcelog[748]: MCG status:
+Nov 06 00:02:04 fedora-acer mcelog[748]: MCi status:
+Nov 06 00:02:04 fedora-acer mcelog[748]: Corrected error
+Nov 06 00:02:04 fedora-acer mcelog[748]: Error enabled
+Nov 06 00:02:04 fedora-acer mcelog[748]: MCi_ADDR register valid
+Nov 06 00:02:04 fedora-acer mcelog[748]: Threshold based error status: green
+Nov 06 00:02:04 fedora-acer mcelog[748]: MCA: corrected filtering (some unreported errors in same region)
+Nov 06 00:02:04 fedora-acer mcelog[748]: Generic CACHE Level-2 Generic Error
+Nov 06 00:02:04 fedora-acer mcelog[748]: STATUS 942000040007110a MCGSTATUS 0
+Nov 06 00:02:04 fedora-acer mcelog[748]: MCGCAP 806 APICID 0 SOCKETID 0
+Nov 06 00:02:04 fedora-acer mcelog[748]: MICROCODE 829
+Nov 06 00:02:04 fedora-acer mcelog[748]: CPUID Vendor Intel Family 6 Model 55 Step 8
+Nov 06 00:02:06 fedora-acer abrt-dump-journal-oops[819]: abrt-dump-journal-oops: Found oopses: 1
+Nov 06 00:02:06 fedora-acer abrt-dump-journal-oops[819]: abrt-dump-journal-oops: Creating problem directories
+Nov 06 00:02:07 fedora-acer abrt-dump-journal-oops[819]: Reported 1 kernel oopses to Abrt
+Nov 06 00:02:07 fedora-acer abrt-server[15602]: Can't find a meaningful backtrace for hashing in '.'
+Nov 06 00:02:07 fedora-acer abrt-server[15602]: Deleting non-reportable oops '.' because DropNotReportableOopses is set to 'yes'
+Nov 06 00:02:07 fedora-acer abrt-server[15602]: 'post-create' on '/var/spool/abrt/oops-2024-11-06-00:02:06-819-0' exited with 1
+Nov 06 00:02:07 fedora-acer abrt-server[15602]: Deleting problem directory '/var/spool/abrt/oops-2024-11-06-00:02:06-819-0'
+Nov 06 00:02:07 fedora-acer abrt-server[15602]: Lock file '.lock' was locked by process 15612, but it crashed?
