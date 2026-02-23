@@ -1,0 +1,100 @@
+[wynz@archlinux-e3-112 ~]$ sudo pacman -Syu
+[sudo] password for wynz: 
+:: Synchronizing package databases...
+ core                                                123.4 KiB   360 KiB/s 00:00 [##############################################] 100%
+ extra                                                 7.9 MiB  4.15 MiB/s 00:02 [##############################################] 100%
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (14) ffmpeg-2:8.0.1-7  gettext-1.0-2  gtest-1.17.0-2  libplist-2.7.0-3  libusbmuxd-2.1.1-2  linux-lts-6.12.73-1
+              muparser-2.3.5-2  nmap-7.98-5  python-3.14.3-1  sdl3-3.4.0-4  snappy-1.2.2-3  spdlog-1.17.0-2  vim-9.2.0010-1
+              vim-runtime-9.2.0010-1
+
+Total Download Size:   186.85 MiB
+Total Installed Size:  357.14 MiB
+Net Upgrade Size:        0.23 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ nmap-7.98-5-x86_64                                    5.9 MiB  1874 KiB/s 00:03 [##############################################] 100%
+ gettext-1.0-2-x86_64                                  3.2 MiB  2.11 MiB/s 00:02 [##############################################] 100%
+ vim-9.2.0010-1-x86_64                                 2.4 MiB  1977 KiB/s 00:01 [##############################################] 100%
+ sdl3-3.4.0-4-x86_64                                1643.6 KiB  1902 KiB/s 00:01 [##############################################] 100%
+ gtest-1.17.0-2-x86_64                               384.7 KiB  1112 KiB/s 00:00 [##############################################] 100%
+ ffmpeg-2:8.0.1-7-x86_64                              14.1 MiB  1929 KiB/s 00:07 [##############################################] 100%
+ muparser-2.3.5-2-x86_64                             173.4 KiB   913 KiB/s 00:00 [##############################################] 100%
+ libplist-2.7.0-3-x86_64                             165.2 KiB   869 KiB/s 00:00 [##############################################] 100%
+ snappy-1.2.2-3-x86_64                                33.4 KiB   669 KiB/s 00:00 [##############################################] 100%
+ spdlog-1.17.0-2-x86_64                              161.3 KiB  1466 KiB/s 00:00 [##############################################] 100%
+ libusbmuxd-2.1.1-2-x86_64                            28.0 KiB   437 KiB/s 00:00 [##############################################] 100%
+ vim-runtime-9.2.0010-1-x86_64                         7.5 MiB   829 KiB/s 00:09 [##############################################] 100%
+ python-3.14.3-1-x86_64                               13.0 MiB  1421 KiB/s 00:09 [##############################################] 100%
+ linux-lts-6.12.73-1-x86_64                          138.3 MiB  4.95 MiB/s 00:28 [##############################################] 100%
+ Total (14/14)                                       186.9 MiB  6.67 MiB/s 00:28 [##############################################] 100%
+(14/14) checking keys in keyring                                                 [##############################################] 100%
+(14/14) checking package integrity                                               [##############################################] 100%
+(14/14) loading package files                                                    [##############################################] 100%
+(14/14) checking for file conflicts                                              [##############################################] 100%
+(14/14) checking available disk space                                            [##############################################] 100%
+:: Running pre-transaction hooks...
+(1/1) Removing linux initcpios...                                                                                                     
+:: Processing package changes...
+( 1/14) upgrading snappy                                                         [##############################################] 100%
+( 2/14) upgrading gtest                                                          [##############################################] 100%
+( 3/14) upgrading sdl3                                                           [##############################################] 100%
+New optional dependencies for sdl3
+    alsa-lib: ALSA audio driver [installed]
+    jack: JACK audio driver [installed]
+    libdecor: Wayland client decorations [installed]
+    libpulse: PulseAudio audio driver [installed]
+    pipewire: PipeWire audio driver [installed]
+    sndio: sndio audio driver [installed]
+( 4/14) upgrading python                                                         [##############################################] 100%
+( 5/14) upgrading ffmpeg                                                         [##############################################] 100%
+( 6/14) upgrading gettext                                                        [##############################################] 100%
+( 7/14) upgrading libplist                                                       [##############################################] 100%
+( 8/14) upgrading libusbmuxd                                                     [##############################################] 100%
+( 9/14) upgrading linux-lts                                                      [##############################################] 100%
+(10/14) upgrading muparser                                                       [##############################################] 100%
+(11/14) upgrading nmap                                                           [##############################################] 100%
+(12/14) upgrading spdlog                                                         [##############################################] 100%
+(13/14) upgrading vim-runtime                                                    [##############################################] 100%
+(14/14) upgrading vim                                                            [##############################################] 100%
+:: Running post-transaction hooks...
+(1/6) Arming ConditionNeedsUpdate...
+(2/6) Updating module dependencies...
+(3/6) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux-lts.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-lts -g /boot/initramfs-linux-lts.img
+==> Starting build: '6.12.73-1-lts'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-lts.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Running post hooks
+  -> Running post hook: [sbctl]
+Signing /boot/vmlinuz-linux-lts
+✓ Signed /boot/vmlinuz-linux-lts
+==> Post processing done
+(4/6) Updating icon theme caches...
+(5/6) Updating the desktop file MIME type cache...
+(6/6) Signing EFI binaries...
+Generating EFI bundles....
+File has already been signed /boot/EFI/systemd/systemd-bootx64.efi
+File has already been signed /boot/vmlinuz-linux-lts
+File has already been signed /usr/lib/systemd/boot/efi/systemd-bootx64.efi.signed
+File has already been signed /boot/EFI/BOOT/BOOTX64.EFI

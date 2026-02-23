@@ -1,0 +1,4 @@
+Feb 17 21:44:20 archlinux-e3-112 kernel: mce: [Hardware Error]: Machine check events logged
+Feb 17 21:44:21 archlinux-e3-112 kernel: mce: [Hardware Error]: CPU 0: Machine Check: 0 Bank 2: 942000000006110a
+Feb 17 21:44:21 archlinux-e3-112 kernel: mce: [Hardware Error]: TSC 0 ADDR 55e180c0 
+Feb 17 21:44:21 archlinux-e3-112 kernel: mce: [Hardware Error]: PROCESSOR 0:30678 TIME 1771357460 SOCKET 0 APIC 0 microcode 838

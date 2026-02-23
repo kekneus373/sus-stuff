@@ -1,0 +1,19 @@
+Feb 20 21:00:10 archlinux-e3-112 systemd-helper[2895]: Running timeline for 'home'.
+Feb 20 21:00:13 archlinux-e3-112 systemd-helper[2895]: Running timeline for 'root'.
+Feb 20 21:00:14 archlinux-e3-112 systemd[1]: snapper-timeline.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit snapper-timeline.service has successfully entered the 'dead' state.
+Feb 20 21:01:14 archlinux-e3-112 systemd[1]: snapperd.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit snapperd.service has successfully entered the 'dead' state.
+Feb 20 21:09:31 archlinux-e3-112 kernel: perf: interrupt took too long (3937 > 3932), lowering kernel.perf_event_max_sample_rate to 50700
+Feb 20 21:09:59 archlinux-e3-112 kernel: mce: [Hardware Error]: Machine check events logged
+Feb 20 21:09:59 archlinux-e3-112 kernel: mce: [Hardware Error]: CPU 0: Machine Check: 0 Bank 2: 942000000005110a                                                          
+Feb 20 21:09:59 archlinux-e3-112 kernel: mce: [Hardware Error]: TSC 0 ADDR 36c317e0 
+Feb 20 21:09:59 archlinux-e3-112 kernel: mce: [Hardware Error]: PROCESSOR 0:30678 TIME 1771614599 SOCKET 0 APIC 0 microcode 838
