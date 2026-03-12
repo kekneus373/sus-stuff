@@ -1,0 +1,185 @@
+System:
+  Host: archlinux-e3-112 Kernel: 6.18.16-1-lts arch: x86_64 bits: 64
+    compiler: gcc v: 15.2.1 clocksource: tsc avail: acpi_pm
+    parameters: initrd=\initramfs-linux-lts.img
+    root=PARTUUID=21906bfd-fc79-4e5b-a329-3f0876e42440 zswap.enabled=0
+    rootflags=subvol=@ rw rootfstype=btrfs intel_pstate=disable
+    intel_idle.max_cstate=0 processor.max_cstate=0 maxcpus=1
+  Desktop: LXQt v: 2.3.2 tk: Qt v: 6.10.1 wm: Openbox v: 3.6.1
+    with: lxqt-panel tools: avail: slock dm: SDDM Distro: Arch Linux
+Machine:
+  Type: Laptop System: Acer product: Aspire E3-112 v: V1.16
+    serial: NXM***************7600
+  Mobo: Acer model: R2 v: Type2 - A01 Board Version
+    serial: NBM***************7600 part-nu: Aspire E3-112_0843_1_16
+    uuid: f83ef2c0-e54d-8040-aa77-2c600c0afc46 Firmware: UEFI vendor: Insyde
+    v: 1.16 date: 10/20/2015
+Memory:
+  System RAM: total: 2 GiB available: 1.8 GiB used: 930.2 MiB (50.5%)
+    igpu: 64 MiB
+  Message: For most reliable report, install dmidecode.
+  Array-1: capacity: 8 GiB slots: 1 modules: 1 EC: None
+    max-module-size: 8 GiB note: est.
+  Device-1: DIMM0 type: DDR3 detail: synchronous size: 2 GiB
+    speed: 1333 MT/s volts: N/A width (bits): data: 64 total: 64
+    manufacturer: Kingston part-no: ACR16D3LFS1KBG/2G serial: 865*****
+CPU:
+  Info: model: Intel Celeron N2840 bits: 64 arch: Silvermont level: v2
+    built: 2013-15 process: Intel 22nm family: 6 model-id: 0x37 (55) stepping: 8
+    microcode: 0x838
+  Topology: cpus: 1x dies: 1 clusters: 1 cores: 1 smt: <unsupported> cache:
+    L1: 56 KiB desc: d-1x24 KiB; i-1x32 KiB L2: 1024 KiB desc: 1x1024 KiB
+  Speed (MHz): 2159 min/max: 498/2159 boost: enabled scaling:
+    driver: acpi-cpufreq governor: performance core: 1: 2159 bogomips: 4335
+  Flags: 3dnowprefetch acpi aperfmperf apic arat arch_perfmon bts clflush
+    cmov constant_tsc cpuid cx16 cx8 de ds_cpl dtes64 dtherm dts epb ept erms
+    est flexpriority fpu fxsr ht ibpb ibrs ida lahf_lm lm mca mce md_clear
+    mmx monitor movbe msr mtrr nonstop_tsc nopl nx pae pat pbe pclmulqdq pdcm
+    pebs pge pni popcnt pse pse36 pti rdrand rdtscp rep_good sep smep ss sse
+    sse2 sse4_1 sse4_2 ssse3 stibp syscall tm tm2 tpr_shadow tsc tsc_adjust
+    tsc_deadline_timer tsc_known_freq tsc_reliable vme vmx vnmi vpid
+    xtopology xtpr
+  Vulnerabilities:
+  Type: gather_data_sampling status: Not affected
+  Type: ghostwrite status: Not affected
+  Type: indirect_target_selection status: Not affected
+  Type: itlb_multihit status: Not affected
+  Type: l1tf status: Not affected
+  Type: mds mitigation: Clear CPU buffers; SMT disabled
+  Type: meltdown mitigation: PTI
+  Type: mmio_stale_data status: Not affected
+  Type: old_microcode status: Not affected
+  Type: reg_file_data_sampling status: Not affected
+  Type: retbleed status: Not affected
+  Type: spec_rstack_overflow status: Not affected
+  Type: spec_store_bypass status: Not affected
+  Type: spectre_v1 mitigation: usercopy/swapgs barriers and __user pointer
+    sanitization
+  Type: spectre_v2 mitigation: Retpolines; IBPB: conditional; IBRS_FW;
+    STIBP: disabled; RSB filling; PBRSB-eIBRS: Not affected; BHI: Not
+    affected
+  Type: srbds status: Not affected
+  Type: tsa status: Not affected
+  Type: tsx_async_abort status: Not affected
+  Type: vmscape status: Not affected
+Graphics:
+  Device-1: Intel Atom Processor Z36xxx/Z37xxx Series Graphics & Display
+    vendor: Acer Incorporated ALI driver: i915 v: kernel arch: Gen-7
+    process: Intel 22nm built: 2012-13 ports: active: eDP-1
+    empty: DP-1,HDMI-A-1,VGA-1 bus-ID: 00:02.0 chip-ID: 8086:0f31
+    class-ID: 0300
+  Device-2: Chicony HD WebCam driver: uvcvideo type: USB rev: 2.0
+    speed: 480 Mb/s lanes: 1 mode: 2.0 bus-ID: 1-4:4 chip-ID: 04f2:b469
+    class-ID: 0e02
+  Display: unspecified server: X.org v: 1.21.1.21 driver: X:
+    loaded: modesetting alternate: fbdev,intel,vesa dri: crocus gpu: i915
+    display-ID: :0 screens: 1
+  Screen-1: 0 s-res: 1366x768 s-size: <missing: xdpyinfo>
+  Monitor-1: eDP-1 model: LG Display 0x0497 built: 2015 res: mode: 1366x768
+    hz: 60 scale: 100% (1) dpi: 136 gamma: 1.2 size: 256x144mm (10.08x5.67")
+    diag: 294mm (11.6") ratio: 16:9 modes: 1366x768
+  API: EGL v: 1.5 hw: drv: intel crocus platforms: device: 0 drv: crocus
+    device: 1 drv: swrast gbm: drv: crocus surfaceless: drv: crocus x11:
+    drv: crocus inactive: wayland
+  API: OpenGL v: 4.5 compat-v: 4.2 vendor: intel mesa v: 26.0.1-arch1.1
+    glx-v: 1.4 direct-render: yes renderer: Mesa Intel HD Graphics (BYT)
+    device-ID: 8086:0f31 memory: 1.46 GiB unified: yes
+  Info: Tools: api: eglinfo,glxinfo de: kscreen-doctor gpu: gputop,
+    intel_gpu_top, lsgpu x11: xprop,xrandr
+Audio:
+  Device-1: Intel Atom Processor Z36xxx/Z37xxx Series High Definition Audio
+    vendor: Acer Incorporated ALI driver: snd_hda_intel v: kernel
+    bus-ID: 00:1b.0 chip-ID: 8086:0f04 class-ID: 0403
+  API: ALSA v: k6.18.16-1-lts status: kernel-api tools: N/A
+  Server-1: sndiod v: N/A status: off tools: aucat,midicat,sndioctl
+  Server-2: PipeWire v: 1.6.0 status: n/a (root, process) with:
+    1: pipewire-pulse status: active 2: wireplumber status: active
+    3: pipewire-alsa type: plugin 4: pw-jack type: plugin
+    tools: pactl,pw-cat,pw-cli,wpctl
+Network:
+  Device-1: Intel Wireless 7260 driver: iwlwifi v: kernel pcie: gen: 1
+    speed: 2.5 GT/s lanes: 1 bus-ID: 02:00.0 chip-ID: 8086:08b2 class-ID: 0280
+  IF: wlan0 state: up mac: 48:51:**:**:**:**
+  IP v4: 10.138.72.32/24 type: dynamic noprefixroute scope: global
+    broadcast: 10.138.72.255
+  IP v6: fe80::4a51:b7ff:fe7d:b752/64 virtual: proto kernel_ll scope: link
+  Device-2: Realtek RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet
+    vendor: Acer Incorporated ALI driver: r8169 v: kernel pcie: gen: 1
+    speed: 2.5 GT/s lanes: 1 port: 1000 bus-ID: 03:00.0 chip-ID: 10ec:8168
+    class-ID: 0200
+  IF: enp3s0 state: down mac: 2c:60:**:**:**:**
+  Info: services: NetworkManager, systemd-timesyncd, wpa_supplicant
+Bluetooth:
+  Device-1: N/A driver: btusb v: 0.8 type: USB rev: 2.0 speed: 12 Mb/s
+    lanes: 1 mode: 1.1 bus-ID: 1-2.1:5 chip-ID: 8087:07dc class-ID: e001
+  Report: btmgmt ID: hci0 rfk-id: 2 state: up address: 48:51:**:**:**:**
+    bt-v: 4.0 lmp-v: 6 status: discoverable: no pairing: no class-ID: 7c010c
+Logical:
+  Message: No logical block device data found.
+RAID:
+  Message: No RAID data found.
+Drives:
+  Local Storage: total: 465.76 GiB used: 21.66 GiB (4.7%)
+  ID-1: /dev/sda maj-min: 8:0 vendor: Seagate model: ST9500325AS
+    family: Momentus 5400.6 size: 465.76 GiB block-size: physical: 512 B
+    logical: 512 B sata: 2.6 speed: 3.0 Gb/s tech: HDD rpm: 5400
+    serial: S2W6**** fw-rev: LVM1 temp: 25 C scheme: GPT
+  SMART: yes state: enabled health: PASSED on: 3y 77d 13h cycles: 1129
+    Pre-Fail: reallocated sector: 100 threshold: 36 attribute: Spin_Retry_Count
+    value: 100 worst: 100 threshold: 97
+  Message: No optical or floppy data found.
+Partition:
+  ID-1: / raw-size: 464.76 GiB size: 464.76 GiB (100.00%)
+    used: 21.62 GiB (4.7%) fs: btrfs block-size: 4096 B dev: /dev/sda2
+    maj-min: 8:2 label: N/A uuid: 36da6199-b615-497e-8b58-5edf38ebf666
+  ID-2: /boot raw-size: 1024 MiB size: 1022 MiB (99.80%)
+    used: 44.4 MiB (4.3%) fs: vfat block-size: 512 B dev: /dev/sda1 maj-min: 8:1
+    label: N/A uuid: F67A-31EF
+  ID-3: /home raw-size: 464.76 GiB size: 464.76 GiB (100.00%)
+    used: 21.62 GiB (4.7%) fs: btrfs block-size: 4096 B dev: /dev/sda2
+    maj-min: 8:2 label: N/A uuid: 36da6199-b615-497e-8b58-5edf38ebf666
+  ID-4: /var/cache/pacman/pkg raw-size: 464.76 GiB
+    size: 464.76 GiB (100.00%) used: 21.62 GiB (4.7%) fs: btrfs
+    block-size: 4096 B dev: /dev/sda2 maj-min: 8:2 label: N/A
+    uuid: 36da6199-b615-497e-8b58-5edf38ebf666
+  ID-5: /var/log raw-size: 464.76 GiB size: 464.76 GiB (100.00%)
+    used: 21.62 GiB (4.7%) fs: btrfs block-size: 4096 B dev: /dev/sda2
+    maj-min: 8:2 label: N/A uuid: 36da6199-b615-497e-8b58-5edf38ebf666
+Swap:
+  Kernel: swappiness: 60 (default) cache-pressure: 100 (default) zswap: no
+  ID-1: swap-1 type: zram size: 1024 MiB used: 329.1 MiB (32.1%)
+    priority: 100 comp: zstd avail: lzo-rle,lzo,lz4,lz4hc,deflate,842
+    dev: /dev/zram0
+Unmounted:
+  Message: No unmounted partitions found.
+USB:
+  Hub-1: 1-0:1 info: hi-speed hub with single TT ports: 6 rev: 2.0
+    speed: 480 Mb/s (57.2 MiB/s) lanes: 1 mode: 2.0 chip-ID: 1d6b:0002
+    class-ID: 0900
+  Device-1: 1-1:2 info: Logitech USB Receiver type: keyboard,mouse
+    driver: logitech-djreceiver,usbhid interfaces: 2 rev: 2.0
+    speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 power: 98mA
+    chip-ID: 046d:c534 class-ID: 0301
+  Hub-2: 1-2:3 info: hi-speed hub with single TT ports: 4 rev: 2.0
+    speed: 480 Mb/s (57.2 MiB/s) lanes: 1 mode: 2.0 power: 100mA
+    chip-ID: 05e3:0608 class-ID: 0900
+  Device-1: 1-2.1:5 info: N/A type: bluetooth driver: btusb interfaces: 2
+    rev: 2.0 speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 power: 100mA
+    chip-ID: 8087:07dc class-ID: e001
+  Device-2: 1-4:4 info: Chicony HD WebCam type: video driver: uvcvideo
+    interfaces: 2 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s) lanes: 1 mode: 2.0
+    power: 500mA chip-ID: 04f2:b469 class-ID: 0e02
+  Hub-3: 2-0:1 info: super-speed hub ports: 1 rev: 3.0
+    speed: 5 Gb/s (596.0 MiB/s) lanes: 1 mode: 3.2 gen-1x1 chip-ID: 1d6b:0003
+    class-ID: 0900
+Sensors:
+  System Temperatures: cpu: 39.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Info:
+  Processes: 180 Power: uptime: 10m states: freeze,mem,disk suspend: deep
+    avail: s2idle wakeups: 0 hibernate: platform avail: shutdown, reboot,
+    suspend, test_resume image: 729 MiB services: upowerd Init: systemd v: 259
+    default: graphical tool: systemctl
+  Packages: pm: pacman pkgs: 987 libs: 270 Compilers: N/A Shell: Sudo (sudo)
+    v: 1.9.17p2 default: Bash v: 5.3.9 running-in: qterminal inxi: 3.3.40
+  Time: 3/8/2026 11:15 AM
