@@ -7,8 +7,14 @@ Cross-platform curated software list
   - [Base OS](#base-os)
   - [Userspace](#userspace)
 - [Fedora LXQt](#fedora-lxqt)
+  - [Base OS](#base-os-1)
+  - [Userspace](#userspace-1)
 - [NixOS KDE ❄️](#nixos-kde-)
+  - [Base OS](#base-os-2)
+  - [Userspace](#userspace-2)
 - [Arch Linux LXQt](#arch-linux-lxqt)
+  - [Base OS](#base-os-3)
+  - [Userspace](#userspace-3)
 - [AppImages for "missing-out" distros](#appimages-for-missing-out-distros)
 - [Windows - Chocolatey](#windows-chocolatey)
   - [Fujitsu Lifebook A574](#fujitsu-lifebook-a574)
@@ -75,7 +81,7 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 ### Base OS
 
 <code>
-sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font kwallet5 kwalletmanager
+sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font kwallet5 kwalletmanager hplip xorg-xset
 </code>
 <p></p>
 
@@ -86,7 +92,7 @@ sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunde
 </code>
 <p></p>
 
-*Last updated on 07.03.2026 at 21:30*
+*Last updated on 12.03.2026 at 23:50*
 
 ---
 
