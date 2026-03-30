@@ -1,0 +1,10 @@
+(17/21) installing hplip                            [##########################] 100%
+Optional dependencies for hplip
+    cups: for printing support [installed]
+    sane: for scanner support
+    python-pillow: for commandline scanning support [installed]
+    python-reportlab: for pdf output in hp-scan
+    rpcbind: for network support
+    python-pyqt5: for running GUI and hp-toolbox
+    libusb: for advanced usb support [installed]
+    wget: for network support [installed]
