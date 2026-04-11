@@ -1,32 +1,41 @@
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
+# ------------------------------------------------------------------------
+# ---        NixOS-HP configuration file from 11.04.2026 22:00.        ---
+# ------------------------------------------------------------------------
+# Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
 { config, lib, pkgs, ... }:
 
-{
+let
+  xprinter-driver = pkgs.callPackage (
+    pkgs.fetchFromGitHub {
+      owner = "fnltochka";
+      repo = "xprinter-cups-nix";
+      rev = "main";
+      sha256 = "sha256-tt6m/dzDBBp5cLfj9wWiQE2oCnj0d8UpYEQY/dhOkVM=";
+    }
+  ) {};
+in {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelParams = [ "mem_sleep_default=deep" "zswap.enabled=1" "zswap.max_pool_percent=40" ];
-  # boot.kernelModules = [ "lz4" "z3fold" ];
-  boot.kernel.sysctl."vm.swappiness" = 1;
-  swapDevices = [
-    { device = "/dev/disk/by-uuid/0a6fb3d2-8e12-4b7c-88ba-0d441ba8daa7"; }
-  ];
+  boot = {
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+    kernelParams = [ "mem_sleep_default=deep" "i915.enable_psr=0" "i915.enable_fbc=0" "i915.enable_dc=0" "intel_iommu=igfx_off" ];
+    kernelModules = [ "zram" ];
+    kernel.sysctl."vm.swappiness" = 15;
+  };
 
-  # Pick only one of the below networking options.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-#  fileSystems."/mnt/smb0" = {
-#      device = "//10.138.72.12/backup";
-#      fsType = "cifs";
-#      options = [ "username=bogdan" "vers=1.0" "users" "noauto" "soft" "echo_interval=10" "retrans=2" ];
-#  };
+  # Enable zram swap.
+  zramSwap.enable = true;
+
+  # Network storage.
   fileSystems."/mnt/smb0" = {
       device = "//10.138.72.31/borg";
       fsType = "cifs";
@@ -35,86 +44,101 @@
   fileSystems."/mnt/smb1" = {
       device = "//192.168.0.91/data0";
       fsType = "cifs";
-      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" ];
+      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
   fileSystems."/mnt/smb2" = {
       device = "//192.168.0.91/data1";
       fsType = "cifs";
-      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" ];
+      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
   fileSystems."/mnt/smb3" = {
       device = "//192.168.0.8/Common";
       fsType = "cifs";
-      options = [ "username=KabzukSP" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" ];
+      options = [ "username=KabzukSP" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
   fileSystems."/mnt/sc" = {
       device = "//10.138.72.31/TrueNAS-SC";
       fsType = "cifs";
-      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" ];
+      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
   fileSystems."/mnt/sus" = {
       device = "//10.138.72.31/sus";
       fsType = "cifs";
-      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" ];
+      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
 
   # Set your time zone.
   time.timeZone = "Europe/Kyiv";
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
+  i18n = {
+    defaultLocale = "en_US.UTF-8";
+    extraLocaleSettings = {
+      LC_ADDRESS = "en_US.UTF-8";
+      LC_IDENTIFICATION = "en_US.UTF-8";
+      LC_MEASUREMENT = "en_US.UTF-8";
+      LC_MONETARY = "en_US.UTF-8";
+      LC_NAME = "en_US.UTF-8";
+      LC_NUMERIC = "en_US.UTF-8";
+      LC_PAPER = "en_US.UTF-8";
+      LC_TELEPHONE = "en_US.UTF-8";
+      LC_TIME = "en_US.UTF-8";
+    };
   };
+
+  # Font choice.
   console = {
-    font = "Lat2-Terminus16";
+    font = "${lib.getBin pkgs.terminus_font}/share/consolefonts/ter-v20n.psf.gz";
     useXkbConfig = true; # use xkb.options in tty.
   };
-  fonts.enableDefaultPackages = true;
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [ pkgs.terminus_font ];
+  };
 
+  # Hardware setup.
   hardware = {
-    graphics.extraPackages = with pkgs; [ intel-vaapi-driver ]; # intel-media-driver
-    graphics.enable32Bit = true;
-    bluetooth.enable = true; # enables support for Bluetooth
-    bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+    graphics = {
+      extraPackages = with pkgs; [ intel-media-driver intel-vaapi-driver intel-compute-runtime-legacy1 ];
+      #enable32Bit = true;
+    };
+    bluetooth = {
+      enable = true; # enables support for Bluetooth
+      powerOnBoot = true; # powers up the default Bluetooth controller on boot
+    };
+    cpu.intel.updateMicrocode = true;
+    intel-gpu-tools.enable = true;
+    enableRedistributableFirmware = true;
   };
-  services = {
-    xserver.enable = true; # Enable the X11 windowing system.
-    displayManager.sddm.enable = true;
-    desktopManager.plasma6.enable = true;
-    displayManager.defaultSession = "plasma";
-  };
-  
+  environment.sessionVariables = { LIBVA_DRIVER_NAME="iHD"; };
 
-  # Configure keymap in X11
-  services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
+  # Enable the X11 windowing system. 
+  services = {
+    xserver = {
+      enable = true;
+      xkb.layout = "us";
+    };
+    displayManager = {
+      sddm.enable = true;
+      defaultSession = "plasma";
+    };
+    desktopManager.plasma6.enable = true;
+  };
 
   # Enable CUPS to print documents, Avahi Bonjour to discover network printers.
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    openFirewall = true;
+  services = {
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    }; 
+    printing = {
+      enable = true;
+      drivers = with pkgs; [ hplip xprinter-driver ];
+    };
   };
-  services.printing = {
-    enable = true;
-    drivers = with pkgs; [ hplip ];
-  };
+
   # Enable sound.
-  # hardware.pulseaudio.enable = true;
-  # OR
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -126,13 +150,10 @@
     #jack.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.libinput.enable = true;
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.wynz = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "camera" "kvm" ];
+    extraGroups = [ "wheel" "camera" "media" "audio" "video" "render" "kvm" "lp" "lpadmin" ];
     packages = with pkgs; [
       kdePackages.kcolorchooser
       # --- UUPDUMP ---
@@ -146,22 +167,23 @@
       brave
       thunderbird
       bleachbit
-      # webcam
+      # --- Webcam apps ---
       kdePackages.kamoso
-      # webcamoid
+      kdePackages.qrca
       borgbackup
+      nextcloud-client
       doublecmd
       meld
       kdePackages.kompare
       czkawka
       curtail
       libreoffice-qt6-fresh
-      onlyoffice-bin_latest
+      onlyoffice-desktopeditors
       vlc
       handbrake
       mediainfo-gui
       audacity
-      easyeffects # downmix to mono when needed
+      easyeffects
       ffmpeg-full
       obs-studio
       pdfarranger
@@ -176,9 +198,9 @@
       kdePackages.ktorrent
       kdePackages.kalk
       kdePackages.kclock
-      # games
-      minetestclient
-      # e-reader support; prs-600 fix
+      # --- Games ---
+      luanti-client
+      # --- E-reader suppor. SONY PRS-600 workaround ---
       calibre
       ghostscript # $ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -o output.pdf input.pdf
     ];
@@ -186,13 +208,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-   environment.systemPackages =  let
-    legacy = import (fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/78add7b7abb61689e34fc23070a8f55e1d26185b.tar.gz";
-      sha256 = "07gxwsywvlsnqj87g9r60j8hrvydcy0sa60825pzkdilrwwhnwjx";
-    }) {}; # take revision ID from Hydra -> Input tab -> Revision column
-  in
-    (with pkgs; [
+   environment.systemPackages = with pkgs; [
       wget
       mc
       unrar-wrapper
@@ -201,40 +217,44 @@
       w3m
       htop
       killall
-      microcodeIntel
+      microcode-intel
       intel-gpu-tools
+      inteltool
+      intelmetool
+      mesa-demos
+      libva-utils
       putty
+      setserial
       screen
       cifs-utils
       samba
       glib
       lm_sensors
       nmap
+      ethtool
+      wol
       smartmontools
-      glxinfo
       inxi
+      fastfetch
       ventoy-full
       brasero
       gnome-disk-utility
       remmina
       angryipscanner
       appimage-run # + .AppImage path
-      # camera support
       libmtp
+      libgphoto2
       gphoto2fs
       kdePackages.kamera
       # xxx BROKEN xxx
-      # setserial
       anydesk
-      # games
+      # --- Games ---
       bottles
       # lutris-free # UA-GTA
       # winetricks  # UA-GTA
-    ]) ++
-    (with legacy; [
-      setserial
-    ]);
+    ];
 
+  # Allow Unfree packages + Anti-Anti-Ventoy overlay.
   nixpkgs.overlays = [
     (self: super: {
       ventoy = super.ventoy.overrideAttrs (old: {
@@ -247,61 +267,45 @@
   ];
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
-      "microcodeIntel"
+      "microcode-intel"
       "anydesk"
       "ventoy"
-     # "teamviewer"
+      "printer-driver-xprinter"
      # "nomachine-client"
-  ];
- environment.localBinInPath = true;
+   ];
+
+  # pipx and QEMU.
+  environment.localBinInPath = true;
   virtualisation.libvirtd= {
     enable = true;
-    qemu.ovmf.packages = with pkgs; [
-      pkgsCross.aarch64-multiplatform.OVMF.fd # AAVMF
-      OVMF.fd
-    ];
   };
-  programs.virt-manager.enable = true;
-  programs.dconf.enable = true;
-  programs.vim = {
-    enable = true;
-    package = pkgs.vim-full;
-    defaultEditor = true;
-  };
-  programs.gphoto2.enable = true;
-  services.samba = {
-    enable = true;
-    settings = {
-      global = {
-        workgroup = "WORKGROUP";
-        security = "user";
-        "client min protocol" = "CORE";
-      };
+
+  # Useful utilites.
+  programs = {
+    virt-manager.enable = true;
+    dconf.enable = true;
+    vim = {
+      enable = true;
+      package = pkgs.vim-full;
+      defaultEditor = true;
     };
+    gphoto2.enable = true;
   };
-  #services.teamviewer.enable = true;
-  #systemd.services.teamviewerd.enable = false;
-#  systemd.services.tvd = {
-#    description = "Alternative TeamViewer remote control daemon";
-#    preStart = "mkdir -pv /var/lib/teamviewer /var/log/teamviewer";
-#    startLimitIntervalSec = 60;
-#    startLimitBurst = 10;
-#    serviceConfig = {
-#      Type = "simple";
-#      ExecStart = "${pkgs.teamviewer}/bin/teamviewerd -f";
-#      PIDFile = "/run/teamviewerd.pid";
-#      ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
-#      Restart = "on-abort";
+
+#  Connect to old SMB 1.0 servers.
+#  services.samba = {
+#    enable = true;
+#    settings = {
+#      global = {
+#        workgroup = "WORKGROUP";
+#        security = "user";
+#        "client min protocol" = "CORE";
+#      };
 #    };
 #  };
+
+  # Remote filesystems support.
   services.gvfs.enable = true;
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
   security.wrappers."mount.cifs" = {
     program = "mount.cifs";
     source = "${lib.getBin pkgs.cifs-utils}/bin/mount.cifs";
@@ -309,10 +313,11 @@
     group = "root";
     setuid = true;
   };
-  # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+
+  # Fix touchpad hang after waking up
   systemd.services.rtouchpad = {
     description = "Unload touchpad module before sleeping";
     enable = true;
@@ -341,23 +346,8 @@
       ExecStart = "${pkgs.bash}/bin/bash -c '${pkgs.util-linux}/bin/logger atouchpad: resuming, loading psmouse && ${pkgs.kmod}/bin/modprobe psmouse'";
     };
   };
-  powerManagement.enable = true;
-  services.power-profiles-daemon.enable = true;
-    services.logind = {
-      lidSwitch = "suspend-then-hibernate"; # Suspend first then hibernate when closing the lid
-      powerKey = "hibernate"; # Hibernate on power button pressed
-      suspendKey = "suspend";
-      powerKeyLongPress = "hybrid-sleep";
-      extraConfig = ''
-        [Login]
-        IdleAction=suspend-then-hibernate
-        IdleActionSec=1h
-      '';
-    };
-  systemd.sleep.extraConfig = ''
-    HibernateDelaySec=30m
-    SuspendState=mem
-  '';
+
+  # In case units above refuse to run.
   environment.etc."systemd/system-sleep/retouchpad" = {
     enable = false;
     text = ''
@@ -374,10 +364,32 @@
       esac
     '';
   };
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
+ 
+  # Better power management.
+  powerManagement.enable = true;
+  services.power-profiles-daemon.enable = true;
+    services.logind = {
+      settings.Login = {
+        HandleLidSwitch = "suspend-then-hibernate"; # Suspend first then hibernate when closing the lid
+        HandlePowerKey = "hibernate"; # Hibernate on power button pressed
+        HandleSuspendKey = "suspend";
+        HandlePowerKeyLongPress = "hybrid-sleep";
+        IdleAction = "suspend-then-hibernate";
+        IdleActionSec = "1h";
+      };
+    };
+  systemd.sleep.extraConfig = ''
+    HibernateDelaySec=30m
+    SuspendState=mem
+  '';
+
+  # OOM killer.
+  services.earlyoom = {
+    enable = true;
+    enableNotifications = true;
+  };
+
+  # Network settings.
   networking = {
     hostName = "nixos-hp"; # Define your hostname.
     networkmanager.enable = true;  # Easiest to use and most distros use this by default.
@@ -385,9 +397,18 @@
       enable = true;
       extraCommands = ''iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns'';
       allowedTCPPorts = [ 53317 ];
-      allowedUDPPorts = [ 5353 53317 ];
+      allowedUDPPorts = [ 9 5353 53317 ];
+    };
+    hosts = {
+      "10.138.72.31" = [ "hsvuldo-server" ];
+    };
+    interfaces = {
+      enp0s25 = {
+        wakeOnLan.enable = true;
+      };
     };
   };
+
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
