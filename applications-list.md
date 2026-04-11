@@ -81,14 +81,14 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 ### Base OS
 
 <code>
-sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font kwallet5 kwalletmanager hplip xorg-xset
+sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse kwallet5 kwalletmanager hplip xorg-xset
 </code>
 <p></p>
 
 ### Userspace
 
 <code>
-sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap gnome-disk-utility elisa htop libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver
+sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap gnome-disk-utility elisa htop libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver
 </code>
 <p></p>
 
