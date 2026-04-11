@@ -38,6 +38,7 @@ Cross-platform curated software list
 sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate htop putty setserial screen nmap cifs-utils libsmbclient gvfs gvfs-backends libglib2.0-bin libmtp* qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm-sensors cpu-x synapse ffmpeg vlc handbrake simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw nomacs qalculate-qt calibre transmission teamviewer uget inxi # doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio
 </code>
 <p></p>
+
 *Last updated on 07.03.2026 at 21:30*
 
 ---
@@ -92,7 +93,7 @@ sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunde
 </code>
 <p></p>
 
-*Last updated on 12.03.2026 at 23:50*
+*Last updated on 11.04.2026 at 14:50*
 
 ---
 
