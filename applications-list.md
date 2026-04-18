@@ -1,5 +1,5 @@
-Cross-platform curated software list
-====================================
+✨ Cross-platform curated software list
+=======================================
 
 ## Table of Contents
 
@@ -26,6 +26,9 @@ Cross-platform curated software list
 
 * [Fonts](https://www.linuxcapable.com/how-to-install-microsoft-fonts-on-debian-linux)
 
+<code>sudo apt install fuse ntfs-3g dosfstools exfatprogs</code>
+<p></p>
+
 ### Userspace
 
 * [Brave](https://brave.com/linux/#debian-ubuntu-mint)
@@ -34,12 +37,10 @@ Cross-platform curated software list
 * [AnyDesk](https://deb.anydesk.com/howto.html)
 * [Angry IP Scanner](https://angryip.org/download/#linux)
 
-<code>
-sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate htop putty setserial screen nmap cifs-utils libsmbclient gvfs gvfs-backends libglib2.0-bin libmtp* qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm-sensors cpu-x synapse ffmpeg vlc handbrake simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw nomacs qalculate-qt calibre transmission teamviewer uget inxi # doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio
-</code>
+<code>sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate htop putty setserial screen nmap cifs-utils libsmbclient gvfs gvfs-backends libglib2.0-bin libmtp* qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm-sensors cpu-x synapse ffmpeg vlc handbrake simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw nomacs qalculate-qt calibre transmission teamviewer uget inxi # doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio</code>
 <p></p>
 
-*Last updated on 07.03.2026 at 21:30*
+*🕒 Last updated on 18.04.2026 at 17:05*
 
 ---
 
@@ -50,6 +51,9 @@ sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate ht
 * [Codecs](https://rpmfusion.org/Howto/Multimedia)
 * [Fonts](https://www.linuxcapable.com/install-microsoft-fonts-on-fedora-linux)
 
+<code>sudo dnf install fuse ntfs-3g dosfstools exfatprogs</code>
+<p></p>
+
 ### Userspace
 
 * [Brave](https://brave.com/linux/#fedora-41-dnf5)
@@ -58,14 +62,12 @@ sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate ht
 * [AnyDesk](https://rpm.anydesk.com/howto.html)
 * [Angry IP Scanner](https://angryip.org/download/#linux)
 
-<code>
-sudo dnf install brave falkon bleachbit gimp mesa-demos mc bc vim vim-default-editor w3m featherpad htop putty setserial screen putty nmap cifs-utils libsmbclient gvfs-smb qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm_sensors cpu-x synapse ffmpeg vlc simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw  nomacs qalculate-qt calibre transmission-qt uget inxi hplip gvfs-gphoto2 gphoto2 borgbackup pipx # doublecmd-gtk qalculate-gtk brasero krita bottles obs-studio
-</code>
+<code>sudo dnf install brave falkon bleachbit gimp mesa-demos mc bc vim vim-default-editor w3m featherpad htop putty setserial screen putty nmap cifs-utils libsmbclient gvfs-smb qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm_sensors cpu-x synapse ffmpeg vlc simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw  nomacs qalculate-qt calibre transmission-qt uget inxi hplip gvfs-gphoto2 gphoto2 borgbackup pipx # doublecmd-gtk qalculate-gtk brasero krita bottles obs-studio</code>
 <p></p>
 
 * Use AppImages of `localsend` and `handbrake`. `curtail` and `freefilesync` get from Flatpak or build from source.
 
-*Last updated on 07.03.2026 at 21:30*
+*🕒 Last updated on 18.04.2026 at 17:04*
 
 ---
 
@@ -75,25 +77,23 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 * To enable AppImages: https://wiki.nixos.org/wiki/Appimage
 
+*🕒 Last updated on 07.03.2026 at 21:30*
+
 ---
 
 ## Arch Linux LXQt
 
 ### Base OS
 
-<code>
-sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse kwallet5 kwalletmanager hplip xorg-xset
-</code>
+<code>sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse ntfs-3g dosfstools exfatprogs kwallet5 kwalletmanager hplip xorg-xset</code>
 <p></p>
 
 ### Userspace
 
-<code>
-sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap gnome-disk-utility elisa htop libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver
-</code>
+<code>sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap gnome-disk-utility elisa htop libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver</code>
 <p></p>
 
-*Last updated on 11.04.2026 at 14:50*
+*🕒 Last updated on 18.04.2026 at 17:03*
 
 ---
 
@@ -107,26 +107,25 @@ sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunde
 * [LocalSend](https://localsend.org/download)
 
 *Find more: https://pkgforge-dev.github.io/Anylinux-AppImages/*
-*Last updated on 07.03.2026 at 21:30*
+
+*🕒 Last updated on 07.03.2026 at 21:30*
 
 ---
 
 ## Windows - Chocolatey
 
+<mark>Note: Outdated 🚫.</mark>
+
 ### Fujitsu Lifebook A574
 
-<code>
-choco install angryip cdburnerxp filezilla gimp libreoffice-fresh openhashtab peazip qbittorrent teamviewer vim vlc git brave nmap tigervnc rufus choco-cleaner localsend.install dvdstyler brave obs-studio thunderbird angryip cdburnerxp crystaldiskinfo.install doublecmd filezilla gimp libreoffice-fresh peazip qbittorrent openhashtab teamviewer anydesk.install choco-cleaner teraterm putty.install vim vlc rufus onlyoffice krita
-</code>
+<code>choco install angryip cdburnerxp filezilla gimp libreoffice-fresh openhashtab peazip qbittorrent teamviewer vim vlc git brave nmap tigervnc rufus choco-cleaner localsend.install dvdstyler brave obs-studio thunderbird angryip cdburnerxp crystaldiskinfo.install doublecmd filezilla gimp libreoffice-fresh peazip qbittorrent openhashtab teamviewer anydesk.install choco-cleaner teraterm putty.install vim vlc rufus onlyoffice krita</code>
 <p></p>
 
-*Last updated in May 2025*
+*🕒 Last updated in May 2025*
 
 ### Lenovo V570
 
-<code>
-choco install anydesk.install angryip calibre cdburnerxp doublecmd crystaldiskinfo.install far googlechrome malwarebytes openhashtab vim peazip qbittorrent vlc rufus tor-browser victoria nmap hwinfo thunderbird gimp ffmpeg-full localsend.install
-</code>
+<code>choco install anydesk.install angryip calibre cdburnerxp doublecmd crystaldiskinfo.install far googlechrome malwarebytes openhashtab vim peazip qbittorrent vlc rufus tor-browser victoria nmap hwinfo thunderbird gimp ffmpeg-full localsend.install</code>
 <p></p>
 
-*Last updated in May 2025*
+*🕒 Last updated in May 2025*
