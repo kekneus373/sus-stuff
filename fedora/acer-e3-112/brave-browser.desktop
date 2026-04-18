@@ -1,5 +1,13 @@
+### As I couldn't figure out what was going wall with credentials storage on my Acer, I decided to disable it all along.
+### For a proper fix, install all packages related to KWallet (including [PAM authentication](https://github.com/KDE/kwallet-pam)),
+### set the same password you use to log into user and disable auto-locking. This is how I fixed this craft on Arch Linux LXQt. 
+### Hope it helps!
+
 [Desktop Entry]
+
 # This desktop file is meant to be used on Fedora LXQt spin to fix credentials disapper and constant cookie-clearing issues
+# WARNING: Only use this if you lowkey crashed out just like me XD
+
 Version=1.1
 Name=[LXQt] Brave Web Browser
 # Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
