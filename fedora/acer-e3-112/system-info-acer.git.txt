@@ -1,0 +1,82 @@
+System:
+  Host: fedora-acer Kernel: 6.11.4-201.fc40.x86_64 arch: x86_64 bits: 64
+    compiler: gcc v: 2.41-37.fc40 clocksource: tsc
+  Desktop: LXQt v: 1.4.0 tk: Qt v: 5.15.12 wm: Openbox v: 3.6.1
+    with: lxqt-panel tools: xscreensaver,xscreensaver-systemd vt: 2 dm: SDDM
+    Distro: Fedora Linux 40 (Forty)
+Machine:
+  Type: Laptop System: Acer product: Aspire E3-112 v: V1.16
+    serial: <superuser required>
+  Mobo: Acer model: R2 v: Type2 - A01 Board Version
+    serial: <superuser required> part-nu: Aspire E3-112_0843_1_16
+    uuid: <superuser required> UEFI-[Legacy]: Insyde v: 1.16 date: 10/20/2015
+CPU:
+  Info: dual core model: Intel Celeron N2840 bits: 64 type: MCP
+    smt: <unsupported> arch: Silvermont rev: 8 cache: L1: 112 KiB L2: 1024 KiB
+  Speed (MHz): avg: 1000 min/max: 500/2582 cores: 1: 1000 2: 1000
+    bogomips: 8666
+  Flags: ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+Graphics:
+  Device-1: Intel Atom Processor Z36xxx/Z37xxx Series Graphics & Display
+    vendor: Acer Incorporated ALI driver: i915 v: kernel arch: Gen-7 ports:
+    active: eDP-1 empty: DP-1,HDMI-A-1 bus-ID: 00:02.0 chip-ID: 8086:0f31
+    class-ID: 0300
+  Device-2: Chicony HD WebCam driver: uvcvideo type: USB rev: 2.0
+    speed: 480 Mb/s lanes: 1 bus-ID: 1-4:3 chip-ID: 04f2:b469 class-ID: 0e02
+  Display: x11 server: X.Org v: 1.20.14 with: Xwayland v: 24.1.3 driver: X:
+    loaded: modesetting unloaded: fbdev,vesa dri: crocus gpu: i915
+    display-ID: :0 screens: 1
+  Screen-1: 0 s-res: 1366x768 s-dpi: 96 s-size: 361x203mm (14.21x7.99")
+    s-diag: 414mm (16.31")
+  Monitor-1: eDP-1 model: LG Display 0x0497 res: 1366x768 hz: 60 dpi: 136
+    size: 256x144mm (10.08x5.67") diag: 294mm (11.6") modes: 1366x768
+  API: OpenGL v: 4.2 vendor: intel mesa v: 24.1.7 glx-v: 1.4 es-v: 3.0
+    direct-render: yes renderer: Mesa Intel HD Graphics (BYT)
+    device-ID: 8086:0f31
+  API: EGL Message: EGL data requires eglinfo. Check --recommends.
+Audio:
+  Device-1: Intel Atom Processor Z36xxx/Z37xxx Series High Definition Audio
+    vendor: Acer Incorporated ALI driver: snd_hda_intel v: kernel
+    bus-ID: 00:1b.0 chip-ID: 8086:0f04 class-ID: 0403
+  API: ALSA v: k6.11.4-201.fc40.x86_64 status: kernel-api
+  Server-1: PipeWire v: 1.0.9 status: active with: 1: pipewire-pulse
+    status: active 2: wireplumber status: active 3: pipewire-alsa type: plugin
+    4: pw-jack type: plugin
+Network:
+  Device-1: Intel Wireless 7260 driver: iwlwifi v: kernel pcie:
+    speed: 2.5 GT/s lanes: 1 bus-ID: 02:00.0 chip-ID: 8086:08b2 class-ID: 0280
+  IF: wlp2s0 state: up mac: e2:1b:**:**:**:**
+  Device-2: Realtek RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet
+    vendor: Acer Incorporated ALI driver: r8169 v: kernel pcie: speed: 2.5 GT/s
+    lanes: 1 port: 1000 bus-ID: 03:00.0 chip-ID: 10ec:8168 class-ID: 0200
+  IF: enp3s0 state: down mac: 2c:60:**:**:**:**
+Bluetooth:
+  Device-1: Intel Bluetooth wireless interface driver: btusb v: 0.8 type: USB
+    rev: 2.0 speed: 12 Mb/s lanes: 1 bus-ID: 1-2.1:4 chip-ID: 8087:07dc
+    class-ID: e001
+  Report: btmgmt ID: hci0 rfk-id: 2 state: up address: 48:51:**:**:**:**
+    bt-v: 4.0 lmp-v: 6 class-ID: 7c010c
+Drives:
+  Local Storage: total: 232.89 GiB used: 22.56 GiB (9.7%)
+  ID-1: /dev/sda vendor: Hitachi model: HTS543225A7A384 size: 232.89 GiB
+    speed: 3.0 Gb/s tech: HDD rpm: 5400 serial: E20A******4K9D fw-rev: A60W
+    temp: 30 C scheme: GPT
+Partition:
+  ID-1: / size: 231.88 GiB used: 22.31 GiB (9.6%) fs: btrfs dev: /dev/sda3
+  ID-2: /boot size: 973.4 MiB used: 249.4 MiB (25.6%) fs: ext4
+    dev: /dev/sda2
+  ID-3: /home size: 231.88 GiB used: 22.31 GiB (9.6%) fs: btrfs
+    dev: /dev/sda3
+Swap:
+  ID-1: swap-1 type: zram size: 3.7 GiB used: 0 KiB (0.0%) priority: 100
+    dev: /dev/zram0
+Sensors:
+  System Temperatures: cpu: 41.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Info:
+  Memory: total: 4 GiB available: 3.7 GiB used: 1.31 GiB (35.4%)
+  Processes: 233 Power: uptime: 43m states: freeze,mem,disk suspend: deep
+    wakeups: 0 hibernate: platform Init: systemd v: 255 target: graphical (5)
+    default: graphical
+  Packages: pm: rpm pkgs: N/A note: see --rpm Compilers: N/A Shell: Bash
+    v: 5.2.26 running-in: qterminal inxi: 3.3.36
