@@ -19,6 +19,7 @@
 - [Windows - Chocolatey](#windows-chocolatey)
   - [Fujitsu Lifebook A574](#fujitsu-lifebook-a574)
   - [Lenovo V570](#lenovo-v570)
+  - [Atom D525](#atom-d525)
 
 ## Debian KDE / Kubuntu
 
@@ -114,7 +115,7 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 ## Windows - Chocolatey
 
-<mark>Note: Outdated 🚫.</mark>
+<mark>Note: WIP 🚧</mark>.
 
 ### Fujitsu Lifebook A574
 
@@ -129,3 +130,34 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 <p></p>
 
 *🕒 Last updated in May 2025*
+
+### Atom D525
+
+<details><summary>22 packages installed.</summary>
+<code>Chocolatey v2.7.1
+aria2 1.37.0
+autohotkey 2.0.24
+autohotkey.install 2.0.24
+chocolatey 2.7.1
+chocolatey-compatibility.extension 1.0.0
+chocolatey-core.extension 1.4.0
+chocolatey-windowsupdate.extension 1.0.5
+crystaldiskinfo.portable 9.8.0
+KB2919355 1.0.20160915
+KB2919442 1.0.20160915
+KB2999226 1.0.20181019
+KB3033929 1.0.5
+KB3035131 1.0.3
+nextcloud-client 33.0.2
+nextcloud-talk 2.1.1
+nmap 7.99.0
+qbittorrent 5.1.4
+rustdesk 1.4.6.20260324
+rustdesk.install 1.4.6.20260324
+tor-browser 15.0.10
+vcredist140 14.50.35719
+vim 9.2.392
+</code>
+</details>
+
+*🕒 Last updated on 26.04.2026 at 13:37*
