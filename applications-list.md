@@ -36,10 +36,11 @@
 * [AnyDesk](https://deb.anydesk.com/howto.html)
 * [Angry IP Scanner](https://angryip.org/download/#linux)
 
-<code>sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate htop putty setserial screen nmap cifs-utils libsmbclient gvfs gvfs-backends libglib2.0-bin libmtp* qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm-sensors cpu-x synapse ffmpeg vlc handbrake simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw nomacs qalculate-qt calibre transmission teamviewer uget inxi # doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio</code>
+<code>sudo apt install chromium falkon bleachbit gimp mesa-utils mc bc vim w3m kate htop psmisc putty setserial screen nmap net-tools cifs-utils libsmbclient gvfs gvfs-backends libglib2.0-bin libmtp* qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm-sensors cpu-x synapse ffmpeg vlc handbrake simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw nomacs qalculate-qt calibre transmission teamviewer uget inxi</code>
 <p></p>
 
-*🕒 Last updated on 18.04.2026 at 17:05*
+* Optional: `doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio`
+*🕒 Last updated on 02.06.2026 at 13:15*
 
 ---
 
@@ -61,12 +62,13 @@
 * [AnyDesk](https://rpm.anydesk.com/howto.html)
 * [Angry IP Scanner](https://angryip.org/download/#linux)
 
-<code>sudo dnf install brave falkon bleachbit gimp mesa-demos mc bc vim vim-default-editor w3m featherpad htop putty setserial screen putty nmap cifs-utils libsmbclient gvfs-smb qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm_sensors cpu-x synapse ffmpeg vlc simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw  nomacs qalculate-qt calibre transmission-qt uget inxi hplip gvfs-gphoto2 gphoto2 borgbackup pipx # doublecmd-gtk qalculate-gtk brasero krita bottles obs-studio</code>
+<code>sudo dnf install brave falkon bleachbit gimp mesa-demos mc bc vim vim-default-editor w3m featherpad htop psmisc putty setserial screen putty nmap net-tools cifs-utils libsmbclient gvfs-smb qlipper gnome-disk-utility doublecmd-qt meld gtkhash vim-gtk3 lm_sensors cpu-x synapse ffmpeg vlc simplescreenrecorder filezilla remmina audacity pinta ark kdenlive gimp libreoffice libreoffice-draw nomacs qalculate-qt calibre transmission-qt uget inxi hplip gvfs-gphoto2 gphoto2 borgbackup pipx</code>
 <p></p>
 
+* Optional: `doublecmd-gtk qalculate-gtk brasero krita bottles obs-studio`
 * Use AppImages of `localsend` and `handbrake`. `curtail` and `freefilesync` get from Flatpak or build from source.
 
-*🕒 Last updated on 18.04.2026 at 17:04*
+*🕒 Last updated on 02.06.2026 at 13:14*
 
 ---
 
@@ -84,15 +86,15 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 ### Base OS
 
-<code>sudo pacman -S networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse ntfs-3g dosfstools exfatprogs kwallet5 kwalletmanager hplip xorg-xset</code>
+<code>sudo pacman -S --needed networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse3 ntfs-3g dosfstools exfatprogs kwallet5 kwalletmanager hplip xorg-xset</code>
 <p></p>
 
 ### Userspace
 
-<code>sudo pacman -S ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap gnome-disk-utility elisa htop libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver</code>
+<code>sudo pacman -S --needed ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap net-tools gnome-disk-utility elisa htop psmisc libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver</code>
 <p></p>
 
-*🕒 Last updated on 18.04.2026 at 17:03*
+*🕒 Last updated on 02.06.2026 at 13:12*
 
 ---
 
@@ -113,7 +115,7 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 ## Windows - Chocolatey
 
-<mark>Note: WIP 🚧</mark>.
+<mark>Note: WIP 🚧</mark>. I don't have access to some of these machines for now.
 
 ### Fujitsu Lifebook A574
 
