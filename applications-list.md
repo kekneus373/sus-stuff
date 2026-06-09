@@ -25,7 +25,7 @@
 
 * [Fonts](https://www.linuxcapable.com/how-to-install-microsoft-fonts-on-debian-linux)
 
-<code>sudo apt install fuse ntfs-3g dosfstools exfatprogs</code>
+<code>sudo apt install fuse3 ntfs-3g dosfstools exfatprogs</code>
 <p></p>
 
 ### Userspace
@@ -40,7 +40,7 @@
 <p></p>
 
 * Optional: `doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio`
-*🕒 Last updated on 02.06.2026 at 13:15*
+*🕒 Last updated on 10.06.2026 at 00:35*
 
 ---
 
@@ -51,7 +51,7 @@
 * [Codecs](https://rpmfusion.org/Howto/Multimedia)
 * [Fonts](https://www.linuxcapable.com/install-microsoft-fonts-on-fedora-linux)
 
-<code>sudo dnf install fuse ntfs-3g dosfstools exfatprogs</code>
+<code>sudo dnf install fuse3 ntfs-3g dosfstools exfatprogs</code>
 <p></p>
 
 ### Userspace
@@ -68,7 +68,7 @@
 * Optional: `doublecmd-gtk qalculate-gtk brasero krita bottles obs-studio`
 * Use AppImages of `localsend` and `handbrake`. `curtail` and `freefilesync` get from Flatpak or build from source.
 
-*🕒 Last updated on 02.06.2026 at 13:14*
+*🕒 Last updated on 10.06.2026 at 00:35*
 
 ---
 
@@ -86,7 +86,7 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 ### Base OS
 
-<code>sudo pacman -S --needed networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse3 ntfs-3g dosfstools exfatprogs kwallet5 kwalletmanager hplip xorg-xset</code>
+<code>sudo pacman -S --needed networkmanager nm-connection-editor network-manager-applet blueman bluez bluez-obex unzip gvfs-smb gvfs-mtp gvfs-gphoto2 glib2 earlyoom systembus-notify terminus-font less fuse3 ntfs-3g dosfstools exfatprogs ntfsprogs kwallet5 kwalletmanager hplip xorg-xset</code>
 <p></p>
 
 ### Userspace
@@ -94,7 +94,7 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 <code>sudo pacman -S --needed ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap net-tools gnome-disk-utility elisa htop psmisc libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver</code>
 <p></p>
 
-*🕒 Last updated on 02.06.2026 at 13:12*
+*🕒 Last updated on 10.06.2026 at 00:35*
 
 ---
 
