@@ -40,6 +40,7 @@
 <p></p>
 
 * Optional: `doublecmd-gtk qalculate-gtk xfce4-clipman-plugin parcellite brasero krita bottles obs-studio`
+
 *🕒 Last updated on 10.06.2026 at 00:35*
 
 ---
@@ -66,9 +67,9 @@
 <p></p>
 
 * Optional: `doublecmd-gtk qalculate-gtk brasero krita bottles obs-studio`
-* Use AppImages of `localsend` and `handbrake`. `curtail` and `freefilesync` get from Flatpak or build from source.
+* Use AppImages of `localsend` and `handbrake`. `curtail` and `freefilesync` - from Flatpak or from source.
 
-*🕒 Last updated on 10.06.2026 at 00:35*
+*🕒 Last updated on 10.06.2026 at 23:51*
 
 ---
 
@@ -91,8 +92,10 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 ### Userspace
 
-<code>sudo pacman -S --needed ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit calibre easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap net-tools gnome-disk-utility elisa htop psmisc libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver</code>
+<code>sudo pacman -S --needed ark arj lrzip unrar unarchiver 7zip lzop chromium w3m uget thunderbird doublecmd-qt6 transmission-qt obs-studio kdenlive handbrake audacity bleachbit easyeffects calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 filezilla gimp mc bc putty copyq redshift vlc vlc-plugin-ffmpeg remmina nmap net-tools gnome-disk-utility elisa htop psmisc libreoffice-fresh qalculate-qt krita meld luanti vim mesa-demos fastfetch kcharselect noto-fonts-emoji qrca w3m freerdp spice-gtk libvncserver</code>
 <p></p>
+
+* Get `calibre` as an AppImage.
 
 *🕒 Last updated on 10.06.2026 at 00:35*
 
@@ -100,16 +103,17 @@ NixOS packages are defined in the `configuration.nix` file located at `sus-stuff
 
 ## AppImages for "missing-out" distros
 
+* [Calibre](https://github.com/ivan-hc/Calibre-appimage)
+* [HandBrake](https://github.com/ivan-hc/Handbrake-appimage)
+* [LocalSend](https://localsend.org/download)
+* [OnlyOffice](https://appimage.github.io/ONLYOFFICE/)
 * [Pinta](https://github.com/pkgforge-dev/Pinta-AppImage)
 * [Ventoy](https://github.com/ryuuzaki42/Ventoy_AppImage)
 * [WPS Office](https://github.com/ivan-hc/WPS-Office-appimage)
-* [OnlyOffice](https://appimage.github.io/ONLYOFFICE/)
-* [HandBrake](https://github.com/ivan-hc/Handbrake-appimage)
-* [LocalSend](https://localsend.org/download)
 
 *Find more: https://pkgforge-dev.github.io/Anylinux-AppImages/*
 
-*🕒 Last updated on 07.03.2026 at 21:30*
+*🕒 Last updated on 10.06.2026 at 23:51*
 
 ---
 
