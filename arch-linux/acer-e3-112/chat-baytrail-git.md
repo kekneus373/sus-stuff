@@ -1,4 +1,4 @@
-﻿#### Set llvmpipe in Debian
+#### Set llvmpipe in Debian
 
 user
 
@@ -111,7 +111,7 @@ Remember to be cautious when editing configuration files, and always make a back
 user
 
 I really appreciate you, it works!! Found nothing about this on the internet, only "how to fix llvmpipe on * GPU"! Have a look:
-bogdan@bogdan-Aspire-E3-112:~$ glxinfo -B
+@resu-Aspire-E3-112:~$ glxinfo -B
 name of display: :0.0
 display: :0  screen: 0
 direct rendering: Yes
@@ -142,7 +142,7 @@ OpenGL profile mask: compatibility profile
 OpenGL ES profile version string: OpenGL ES 3.2 Mesa 23.0.4-0ubuntu1~22.04.1
 OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
 
-bogdan@bogdan-Aspire-E3-112:~$ 
+resu@resu-Aspire-E3-112:~$ 
 
 ChatGPT
 
