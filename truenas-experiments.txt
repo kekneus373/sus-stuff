@@ -1,0 +1,13 @@
+1. localization: timezone Europe/Kyiv
+2. network: hostname truenas-vm
+3. pool: sixsevenkid, raid-z1
+4. root dataset: description 67!!!!, atime=on
+5. child dataset: ppua description tpb
+6. add users wynz, kabzuksp
+7. add group sambashare
+8. add share ppua: dataset ppua description tpb
+9. apps poool sixsevenkid
+
+***
+
+https://www.truenas.com/docs/scale/25.04/scaletutorials/shares/smb/
