@@ -1,0 +1,11 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda3        19G  2.7G   16G  15% /
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           977M   12M  966M   2% /dev/shm
+efivarfs        256K   63K  189K  25% /sys/firmware/efi/efivars
+tmpfs           391M  1.3M  390M   1% /run
+tmpfs           977M  124K  977M   1% /tmp
+/dev/vda3        19G  2.7G   16G  15% /home
+/dev/vda2       974M  294M  613M  33% /boot
+/dev/vda1       599M  7.5M  592M   2% /boot/efi
+tmpfs           196M  112K  196M   1% /run/user/1000
