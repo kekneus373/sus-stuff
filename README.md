@@ -14,29 +14,34 @@ This repository contains modular configurations for various platforms and applic
 
 ### Root folder
 
-| Path                      | Description                                                                |
-|----------------------------------|----------------------------------------------------------------------------|
-| `Templates.zip`                  | Shared templates of empty LibreOffice documents.                           |
-| `applications-list.md`           | List of my most-used applications with brief descriptions. Prolly the most useful one here.                                                                                      |
-| `avahi-investigation.md`         | Correct Avahi Daemon setup.                                                |
-| `brasero-session-bad-medium.log` | Log after failed burn attempt to a scratched CD.                           |
-| `bt-csr-dongle10.txt`            | How cheap BlueTooth dongles from AliExpress detect in Linux.               |
-| `dd.txt`                         | Simple DiskDestroyer one-liner 💀🥀.                                            |
-| `default-cifs.conf`              | Default CIFS mount options (NixOS 25.11).                                  |
-| dmesg_2026-01-19-...             | Some random Linux kernel log from unknown operating system 👌.                |
-| `docker-ubuntu.md`               | How to install Docker CLI on Ubuntu Server.                                |
-| `mount-netgear.txt`              | 2 commands for mounting NetGear ReadyNAS Duo drives under NixOS in 2 minutes.                                                                                                   |
-| `murmur.ini`                     | Last used Mumble server config (2024).                                     |
-| `pcspkr-chat.md`                 | ChatGPT about enabling PC speaker/buzzer in Debian.                        |
-| `putty-font.txt`                 | Chosen font for PuTTY under Linux.                                         |
-| `remmina-snap.txt`               | Standard message from Remmina snap about giving it access to I/O devices (2024).                                                                                            |
-| `remove-xfce-install-lxqt.odt`   | ChatGPT guide on how to switch to LXQt w/o reinstalling.                   |
+| Path                             | Description                                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------------------|
+| `Templates.zip`                  | Shared templates of empty LibreOffice documents.                                            |
+| `applications-list.md`           | List of my most-used applications with brief descriptions. Prolly the most useful one here. |
+| `avahi-investigation.md`         | Correct Avahi Daemon setup.                                                                 |
+| `brasero-session-bad-medium.log` | Log after failed burn attempt to a scratched CD.                                            |
+| `bt-csr-dongle10.txt`            | How cheap BlueTooth dongles from AliExpress detect in Linux.                                |
+| `dd.txt`                         | Simple DiskDestroyer one-liner 💀🥀.                                                       |
+| `default-cifs.conf`              | Default CIFS mount options (NixOS 25.11).                                                   |
+| dmesg_2026-01-19-...             | Some random Linux kernel log from unknown operating system 👌.                              |
+| `docker-ubuntu.md`               | How to install Docker CLI on Ubuntu Server.                                                 |
+| `mount-netgear.txt`              | 2 commands for mounting NetGear ReadyNAS Duo drives under NixOS in 2 minutes.               |
+| `murmur.ini`                     | Last used Mumble server config (2024).                                                      |
+| `pcspkr-chat.md`                 | ChatGPT about enabling PC speaker/buzzer in Debian.                                         |
+| `putty-font.txt`                 | Chosen font for PuTTY under Linux.                                                          |
+| `remmina-snap.txt`               | Standard message from Remmina snap about giving it access to I/O devices (2024).            |
+| `remove-xfce-install-lxqt.odt`   | ChatGPT guide on how to switch to LXQt w/o reinstalling.                                    |
+| `truenas-experiments.txt`        | Steps I've taken while setting up TrueNAS SCALE in 2025 (migrated from NAS4Free)            |
 
 ### Platform-Specific Folders
+#### Android
+- Ongoing hobbyist project of reflashing smartpones and tablets. Started in mid 2025
+- Includes discovered guides, links to ROM and recovery sources (soon)
+- Details on maintaining older Android version yourself (like refreshing cerificates)
 
 #### `acer-e3-112` Linux Environment
 - Core development/debugging scripts for my buggy Acer-E3 112 series notebook.
-- BayTrail hangs and freezes checklist
+- BayTrail hangs and freezes checklist (`chat-baytrail-git.md`)
 - Logs capture raw system events (e.g., `suspend-wakeup-in-loop-git.log`, `firstfreeze-or-oomd`).
 
 #### Arch Linux LXQt General
@@ -70,7 +75,10 @@ This repository contains modular configurations for various platforms and applic
 ### Operating System Configurations
 #### Fedora VM
 - Shared folder mount for VM (`9p.bash`)
+- Shared folder host permissions fix (`fix-permissions-public0.sh`)
 - Tor proxy startup (`tor.bash`)
+- Falkon separate profile startup (`falkonschool.bash`)
+- Installation of the Nix package manager (df-h... used space comparison, `fedora-nix.md` guide)
 
 #### Linux Mint
 - Didn't use it much, so there are mostly logs from the above mentioned device.
