@@ -17,25 +17,28 @@ This repository contains modular configurations for various platforms and applic
 | Path                             | Description                                                                                 |
 |----------------------------------|---------------------------------------------------------------------------------------------|
 | `Templates.zip`                  | Shared templates of empty LibreOffice documents.                                            |
-| `applications-list.md`           | List of my most-used applications with brief descriptions. Prolly the most useful one here. |
-| `avahi-investigation.md`         | Correct Avahi Daemon setup.                                                                 |
-| `brasero-session-bad-medium.log` | Log after failed burn attempt to a scratched CD.                                            |
-| `bt-csr-dongle10.txt`            | How cheap BlueTooth dongles from AliExpress detect in Linux.                                |
-| `dd.txt`                         | Simple DiskDestroyer one-liner 💀🥀.                                                       |
-| `default-cifs.conf`              | Default CIFS mount options (NixOS 25.11).                                                   |
-| dmesg_2026-01-19-...             | Some random Linux kernel log from unknown operating system 👌.                              |
+| **`applications-list.md`**       | List of my most-used applications with brief descriptions. Prolly the most useful one here. |
+| `avahi-investigation.md`         | Correct Avahi mDNS Daemon setup.                                                            |
+| `brasero-session-bad-medium.log` | Log after a failed burn attempt to a scratched CD.                                          |
+| `bt-csr-dongle10.txt`            | How cheap Bluetooth dongles from AliExpress are detected in Linux.                          |
+| `dd.txt`                         | Simple DiskDestroyer one-liner 💀🥀.                                                        |
+| `default-cifs.conf`              | Default CIFS mount options on NixOS 25.11.                                                  |
+| dmesg_2026-01-19-...             | Some random Linux kernel log from an unknown OS 👌.                                         |
 | `docker-ubuntu.md`               | How to install Docker CLI on Ubuntu Server.                                                 |
 | `mount-netgear.txt`              | 2 commands for mounting NetGear ReadyNAS Duo drives under NixOS in 2 minutes.               |
 | `murmur.ini`                     | Last used Mumble server config (2024).                                                      |
+| `pbs-calendar.md`                | Good backup retention setup for Proxmox Backup Server.                                      |
 | `pcspkr-chat.md`                 | ChatGPT about enabling PC speaker/buzzer in Debian.                                         |
+| `prs-plus-advice.txt`            | Should you flash your Sony E-Book Reader to PRS+ custom ROM?                                |
 | `putty-font.txt`                 | Chosen font for PuTTY under Linux.                                                          |
 | `remmina-snap.txt`               | Standard message from Remmina snap about giving it access to I/O devices (2024).            |
 | `remove-xfce-install-lxqt.odt`   | ChatGPT guide on how to switch to LXQt w/o reinstalling.                                    |
-| `truenas-experiments.txt`        | Steps I've taken while setting up TrueNAS SCALE in 2025 (migrated from NAS4Free)            |
+| `truenas-experiments.txt`        | Steps I've taken while setting up TrueNAS SCALE in 2025 while migrating from NAS4Free.      |
+| `zswap-case-study.txt`           | Finding out why my main machine is slow as hell 🗿.                                         |
 
 ### Platform-Specific Folders
 #### Android
-- Ongoing hobbyist project of reflashing smartpones and tablets. Started in mid 2025
+- Ongoing hobbyist project of reflashing smartpones and tablets. Started in 🕒 Mid 2025
 - Includes discovered guides, links to ROM and recovery sources (soon)
 - Details on maintaining older Android version yourself (like refreshing cerificates)
 
@@ -92,10 +95,12 @@ This repository contains modular configurations for various platforms and applic
 #### NixOS
 - Deployment configurations
 - Hardware quirks
+- Details about QEMU
 
 ### Utilities & Monitoring
 #### Uptimes
 - Historical metrics for performance tracking of servers (e.g., `410/2026.txt`).
+- Tips on automation (`sysstat-sar.md`).
 
 ## How to Use
 
