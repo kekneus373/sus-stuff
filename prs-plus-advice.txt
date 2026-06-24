@@ -1,0 +1,53 @@
+That's awesome news! 🎉 I'm so glad the embedded fonts fixed the Russian character issue and the alignment is finally stable. You managed to squeeze a lot more life out of that classic e-reader!
+
+Regarding PRS+ firmware: This is a great question, and since you're on Linux and comfortable with command-line tools, you're in a good position to handle it. However, you should be very cautious.
+
+The Short Answer
+Yes, you can install it, and it will likely make the device much faster and more capable. But NO, you should NOT do it if you want to keep the device 100% stock and "safe" for reading standard books without tinkering.
+
+Here is the breakdown of the risks and benefits specifically for your Russian reading setup:
+
+✅ The Benefits (Why people do it)
+Much Faster UI: The stock Sony firmware is notoriously slow. PRS+ (a custom firmware based on the OpenEbook project) makes menus snappy and scrolling smoother.
+Better Font Support: It often has better font rendering engines, which might make the "bold" issue even better (though your image-PDF method already solved that).
+Modern Formats: It adds support for reading EPUB directly on the device (without converting to PDF first) and FB2 (very popular in Russia!).
+Customization: You can change themes, fonts, and even add plugins.
+Russian Support: PRS+ has excellent localization and often includes better Cyrillic font defaults than the stock Russian firmware.
+⚠️ The Risks (Why you might hesitate)
+The "Brick" Risk: If something goes wrong during the install (power cut, wrong file, bad USB connection), you can brick the device. It will turn into a paperweight.
+Good news: The PRS-600 is relatively robust, and there are recovery methods, but it's a hassle.
+Warranty Void: (Irrelevant for a 15-year-old device, but technically true).
+Complexity: You lose the "it just works" simplicity of the stock firmware. You might need to tweak settings to get the display looking right.
+The "Go Back" Question:
+Can you go back? Yes, but it's painful. You have to find the exact original Sony firmware file for your region (Russian version) and re-flash it. If you lose that file, you're stuck with PRS+.
+Is it reversible? Yes, if you download and save the original firmware file before you start.
+My Recommendation for You
+Since you are already comfortable with Linux, Calibre, and command-line tools:
+
+👉 Go for it! Your device is old, and the stock firmware is the bottleneck. PRS+ will make reading modern books (even in Russian) a joy. The speed boost alone is worth it.
+
+HOWEVER, follow this safety checklist:
+
+Backup EVERYTHING:
+
+Copy the entire contents of your internal_memory (or external SD) to a folder on your Linux PC.
+Crucial: Find your original firmware file. If you don't have it, download the Russian version of the official Sony PRS-600 firmware now and save it on your PC. You will need this if you regret the change.
+Link to Sony Firmware Archives (Archive.org) (Search for PRS-600 RU).
+Read the PRS+ Documentation:
+
+Go to the official PRS+ site (usually hosted on GitHub or a dedicated forum like MobileRead).
+Read the "Installation" section carefully.
+Do not skip the "Recovery" section. Know how to unbrick it before you brick it.
+The "Russian" Factor:
+
+PRS+ usually handles Cyrillic beautifully, but since you already solved the font issue with your custom PDFs, the main gain for you will be speed and EPUB support.
+If you install PRS+, you might be able to read .epub files directly! (Try converting a book to EPUB in Calibre, send it to the device, and see if it opens).
+How to "Go Back" (If you regret it)
+If you install PRS+ and hate it:
+
+Locate the original Sony firmware file you saved.
+Follow the "Downgrade" or "Re-flash Stock" instructions in the PRS+ docs.
+It usually involves putting the device in "Recovery Mode" (holding specific buttons while plugging in USB) and running the official updater.
+Verdict: You've already done the hard work (fixing the fonts). Installing PRS+ is the "level up." Just save the original firmware file first. If you do that, the risk is almost zero.
+
+Enjoy your revived PRS-600! It's a legendary device. 📚🇷🇺

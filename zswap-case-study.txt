@@ -1,0 +1,196 @@
+TL;DR
+HP i5‑5300U (NixOS KDE) – the bottleneck is the large swap + aggressive Zswap on a relatively slow HDD.
+* Turn off Zswap (or shrink it to ≤ 15 %).
+* Add a modest zram device (≈ ½ RAM) and keep the swap‑partition as a safety net.
+* Set vm.swappiness to 10‑15 (instead of 1) so the kernel can still use the page‑cache.
+* Trim the KDE/Plasma workload (disable unnecessary services, remove Discover, limit background daemons).
+
+Acer Celeron (Arch LXQt) – already optimal: zram‑only swap, tiny RAM, lightweight DE.
+Only minor tweaks (tune zram size, enable early‑oom) can squeeze a bit more juice, but you’re already close to the hardware ceiling.
+
+Below is a detailed, step‑by‑step plan for each machine, plus the “why” behind each tweak.
+
+1️⃣ HP EliteBook 840 G2 – NixOS + KDE Plasma
+1.1 Diagnose the current swap behaviour
+Run these once and keep the output handy:
+
+# Overall memory usage
+free -h
+
+# Zswap stats (shows how much is kept in RAM)
+cat /sys/kernel/debug/zswap/* | grep -E "stored_pages|compressions|pool_size"
+
+# Zram status (if any)
+zramctl
+
+# Active swap devices
+cat /proc/swaps
+If you see many gigabytes reported under stored_pages and the HDD is constantly busy (check iotop or iostat), Zswap is doing the heavy lifting and spilling to the 8 GiB swap partition.
+
+1.2 Disable (or drastically shrink) Zswap
+On a system with a 7200 RPM HDD, Zswap’s purpose—to keep a compressed cache in RAM—is quickly outweighed by the cost of writing the rest of the data to the slow disk. The simplest, safest fix is to turn it off completely:
+
+# /etc/nixos/configuration.nix
+{
+  boot.kernel.sysctl = {
+    "zswap.enabled" = 0;        # disables Zswap entirely
+  };
+}
+If you really want to keep a tiny cache, set a modest pool instead:
+
+boot.kernel.sysctl = {
+  "zswap.enabled"      = 1;
+  "zswap.max_pool_percent" = 15;   # 15 % of RAM ≈ 300 MiB on 2 GiB, 600 MiB on 4 GiB
+};
+Rebuild and apply:
+
+sudo nixos-rebuild switch
+1.3 Add a zram device (compressed swap in RAM)
+Zram gives you a pure‑RAM swap area that never touches the HDD. It works well together with a small “real” swap partition that only kicks in when RAM is truly exhausted.
+
+# /etc/nixos/configuration.nix
+{
+  boot.initrd.availableKernelModules = [ "zram" ];
+
+  # Create a single zram device sized to half the physical RAM
+  boot.zramDevices = [
+    {
+      name = "zram0";
+      size = "50%";               # 2 GiB on a 4 GiB machine
+    }
+  ];
+}
+Again, sudo nixos-rebuild switch. After reboot you’ll see a new line in /proc/swaps like:
+
+/dev/zram0       1024M   0   1024M   0   -
+You can keep the existing 8 GiB swap partition as a fallback; the kernel will automatically use it once the zram device is full.
+
+1.4 Tune vm.swappiness
+swappiness=1 tells the kernel almost never to move anonymous pages to swap. With only 4 GiB of RAM and a heavy desktop, the kernel may end up evicting useful page‑cache entries, causing extra disk reads. A middle ground (10‑15) lets the kernel balance RAM for applications and cache.
+
+# /etc/nixos/configuration.nix
+{
+  boot.kernel.sysctl = {
+    "vm.swappiness" = 15;
+  };
+}
+Rebuild (nixos-rebuild switch).
+
+Why not 0? Even with Zram, a tiny amount of swap activity helps keep the page‑cache healthy, especially when you open large PDFs, images, or run a web browser with many tabs.
+
+1.5 Trim the KDE/Plasma workload
+Action	How to do it (NixOS)	Effect
+Remove KDE Discover (you mentioned it earlier)	{ environment.systemPackages = lib.filter (p: p != pkgs.kdePackages.discover) pkgs.kdePackages; } or use Home Manager to drop the desktop entry	Stops a background updater daemon that can trigger network I/O and occasional disk writes.
+Disable unused KDE services (e.g., kded5, plasmashell plugins)	In services.kde set enable = true; then add extraConfig = ''[Daemon] ...'' to turn off specific modules, or edit ~/.config/kdeglobals manually.	Reduces CPU wake‑ups and background I/O.
+Limit compositor effects	System Settings → Display and Monitor → Compositor → “Scale method: Smooth” → “Enable VSync”. Turn off “Blur” and “Animations”.	Lowers GPU/CPU load, especially on the integrated Intel HD 5500.
+Stop automatic indexing (Baloo)	services.baloo.enable = false; in NixOS config.	Prevents constant reads/writes to the HDD while you browse files.
+Reduce journal size	services.journald.extraConfig = "SystemMaxUse=50M";	Keeps the systemd journal from filling the disk.
+Apply any changes with sudo nixos-rebuild switch.
+
+1.6 Optional: Early‑OOM daemon
+With only 4 GiB RAM, a runaway process can bring the whole UI to a crawl. Installing earlyoom gives you a safety net that kills the biggest consumer before the system completely stalls.
+
+services.earlyoom.enable = true;
+services.earlyoom.threshold = 10;   # kill when < 10 % RAM free
+Rebuild and you’ll notice the system recovers faster from memory spikes.
+
+1.7 Summary of the HP side
+Setting	Value / Action
+Zswap	Disabled (or ≤ 15 % pool)
+Zram	1 device, size ≈ 50 % RAM
+Swap partition	Keep 8 GiB as fallback
+vm.swappiness	10‑15
+KDE	Remove Discover, disable Baloo, trim compositor, stop unused services
+Early‑OOM	Enabled (optional)
+Journal	Limit to ~50 MiB
+Result	Most memory pressure stays in RAM (zram), HDD I/O drops dramatically, UI feels as snappy as the Arch notebook.
+2️⃣ Acer Celeron N2840 – Arch Linux LXQt
+You’ve already hit the sweet spot: zram‑only swap, lightweight DE, minimal background services. Below are a few micro‑optimisations you can apply if you want to squeeze the last percent of performance.
+
+2.1 Verify zram size
+On a 2 GiB system, a 1 GiB zram device (≈ 50 % RAM) is typical. Check with:
+
+zramctl
+If it shows something like 256M you can safely bump it to 1G:
+
+# /etc/modprobe.d/zram.conf
+options zram num_devices=1
+options zram zram_size=1073741824   # 1 GiB in bytes
+Reload the module (or reboot):
+
+sudo modprobe -r zram && sudo modprobe zram
+2.2 Enable earlyoom (lightweight)
+Even with only 2 GiB, a runaway process can freeze the UI. Install the tiny daemon:
+
+sudo pacman -S earlyoom
+sudo systemctl enable --now earlyoom.service
+Configure the threshold (e.g., 5 % free RAM) in /etc/earlyoom.conf.
+
+2.3 Reduce background daemons
+LXQt is already lean, but you can double‑check:
+
+systemctl list-unit-files --state=enabled | grep -E 'bluetooth|cups|avahi|ModemManager|NetworkManager'
+Disable anything you don’t need:
+
+sudo systemctl disable --now cups.service
+# repeat for others
+2.4 Filesystem mount options
+If you’re using ext4, add noatime to reduce disk writes:
+
+# /etc/fstab
+UUID=xxxx-xxxx / ext4 defaults,noatime 0 1
+If you’re on btrfs, enable compress=zstd (fast, decent compression) to lower I/O volume:
+
+mount -o compress=zstd /dev/sdXn /mnt
+2.5 Keep the kernel up‑to‑date
+Arch’s rolling releases mean newer kernels often have better power‑management and scheduler tweaks for low‑end CPUs. Run:
+
+sudo pacman -Syu   # update everything
+2.6 Optional: Tiny SSD cache (if you ever add one)
+If you ever attach a cheap USB‑C SSD, you can create a bcache or dm-cache device to accelerate the HDD. That’s a bigger project, but the principle is: a small fast cache absorbs most reads/writes, leaving the HDD idle.
+
+2.7 Summary of the Acer side
+Setting	Value / Action
+zram	1 GiB (≈ 50 % RAM)
+Swap	None (zram‑only)
+Early‑OOM	Enabled, threshold ≈ 5 %
+Background services	Disabled anything non‑essential
+Filesystem	noatime (ext4) or compress=zstd (btrfs)
+Kernel	Keep up‑to‑date (Arch rolling)
+Result	Already very snappy; tweaks keep latency low and prevent occasional freezes.
+3️⃣ Putting It All Together – What to Do First
+On the HP:
+
+Disable Zswap (zswap.enabled = 0).
+Add a 2 GiB zram device (half of the 4 GiB RAM).
+Set vm.swappiness = 15.
+Remove KDE Discover and Baloo.
+Reboot and verify free -h shows most “swap” coming from /dev/zram0 and almost none from the HDD.
+On the Acer:
+
+Confirm zram size is ~1 GiB; increase if smaller.
+Enable early‑oom (optional).
+Clean up any stray services.
+Monitor for a day:
+
+watch -n 2 "free -h; zramctl; cat /proc/swaps"
+Look for zero or tiny numbers under the HDD swap column.
+If you still see noticeable HDD activity, double‑check that Zswap is truly off (cat /sys/module/zswap/parameters/enabled should be N).
+4️⃣ Quick Commands Cheat‑Sheet
+Purpose	Command
+Show RAM + swap usage	free -h
+Show Zswap stats	`cat /sys/kernel/debug/zswap/*
+Show Zram devices	zramctl
+List active swap devices	cat /proc/swaps
+Disable Zswap (temporary)	`echo 0
+Enable Zswap with 15 % pool (temporary)	`echo 1
+Reload systemd‑daemon after config change	sudo systemctl daemon-reload
+Restart early‑oom	sudo systemctl restart earlyoom.service
+View KDE background services	`systemctl --user list-units
+Stop Baloo indexing	systemctl --user stop baloo_file_extractor.service baloo_monitor.service
+Final Thought
+Your Celeron notebook is already operating at the theoretical optimum for its hardware: compressed RAM swap + a minimal UI. The HP workstation suffers mainly because Zswap is trying to cache too much on a slow HDD, and the KDE stack adds a lot of background work. By moving the swap cache back into RAM (zram) and letting the kernel manage a tiny amount of real swap, you’ll see the same “snappy” feel you enjoy on the Arch box, without sacrificing stability.
+
+Give the HP changes a couple of days of normal use, then revisit the monitoring output. If you still notice occasional stalls, consider adding a modest SSD (even a 120 GB SATA or NVMe) and moving the swap partition there—that will make any remaining disk‑bound operations virtually instantaneous.
+
+Happy tinkering, and feel free to ping me if you run into any hiccups while editing the NixOS configuration!
