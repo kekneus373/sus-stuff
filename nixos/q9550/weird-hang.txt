@@ -1,0 +1,1 @@
+May 30 15:43:25 nixos-p4 kernel: hrtimer: interrupt took 2120226 ns
