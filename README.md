@@ -1,5 +1,5 @@
 Everything collection 📚
-==========================
+========================
 
 This repository contains modular configurations for various platforms and applications. Each folder includes platform-specific settings, logs, and scripts tailored to target environments.
 
@@ -16,6 +16,7 @@ This repository contains modular configurations for various platforms and applic
 
 | Path                             | Description                                                                                 |
 |----------------------------------|---------------------------------------------------------------------------------------------|
+| `.bashrc`                        | Bash configuration for headless devices with serial connection (routers, servers etc.).     |
 | `Templates.zip`                  | Shared templates of empty LibreOffice documents.                                            |
 | **`applications-list.md`**       | List of my most-used applications with brief descriptions. Prolly the most useful one here. |
 | `avahi-investigation.md`         | Correct Avahi mDNS Daemon setup.                                                            |
@@ -39,7 +40,7 @@ This repository contains modular configurations for various platforms and applic
 ### Platform-Specific Folders
 #### Android
 - Ongoing hobbyist project of reflashing smartpones and tablets. Started in 🕒 Mid 2025
-- Includes discovered guides, links to ROM and recovery sources (soon)
+- Includes discovered guides, links to ROMs and recovery sources (soon)
 - Details on maintaining older Android version yourself (like refreshing cerificates)
 
 #### `acer-e3-112` Linux Environment
@@ -106,12 +107,5 @@ This repository contains modular configurations for various platforms and applic
 
 1. **Target a Platform**: Navigate to the corresponding folder (e.g., `/arch` for Arch Linux).
 2. **Access Logs, Scripts and Configurations**: Check relevant files like `dmesg16022026.log` for debugging and so on.
-
-## To add
-
-* NixOS configs from Q9550 → P4 → Athlon PC
-
-
-
 
 > Written with [StackEdit](https://stackedit.io/).
