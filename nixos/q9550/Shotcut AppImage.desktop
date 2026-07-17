@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Shotcut AppImage
+Comment=Run AppImage version of Shotcut using a Bash script
+Exec=bash -c "$HOME/run-shotcut.bash"
+Icon=org.shotcut.Shotcut
+Path=
+Terminal=true
+StartupNotify=false
