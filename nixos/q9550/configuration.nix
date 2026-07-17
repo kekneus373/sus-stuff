@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# ---       NixOS-AMD configuration file from 28.06.2026 17:19.        ---
+# ---       NixOS-AMD configuration file from 17.07.2026 18:58.        ---
 # ------------------------------------------------------------------------
 # Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
@@ -52,27 +52,19 @@
   };
   fonts = {
     enableDefaultPackages = true;
-    packages = with pkgs; [ pkgs.terminus_font ];
+    packages = with pkgs; [ terminus_font ];
   };
 
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
-    videoDrivers = [ "radeon" ];
     desktopManager.xfce.enable = true;
     xkb.layout = "us";
   };
   services.displayManager.defaultSession = "xfce";
 
   # Enable CUPS to print documents.
-  services = {
-    avahi = {
-      enable = true;
-      nssmdns4 = true;
-      openFirewall = true;
-    };
-    printing.enable = true;
-  };
+  services.printing.enable = true;
 
   # Enable sound.
   security.rtkit.enable = true;
@@ -113,9 +105,14 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.wynz = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "camera" "media" "audio" "video" "render" "lp" "lpadmin" ];
-     packages = with pkgs; [
+    extraGroups = [ "wheel" "camera" "media" "audio" "video" "render" "lp" "lpadmin" "wireshark" ];
+    packages = with pkgs; [
       aria2
+      openssl
+      brasero
+      ventoy-full
+      gnome-disk-utility
+      remmina
       gucharmap
       shotcut
       ffmpeg-full
@@ -127,6 +124,7 @@
       bleachbit
       baobab
       doublecmd
+      peazip
       meld
       czkawka
       libreoffice-fresh
@@ -134,52 +132,46 @@
       vlc
       filezilla
       nextcloud-client
+      angryipscanner
+      putty
+      rustdesk-flutter
       audacity
       lmms
       easyeffects
       gimp3
- #    pinta
+      pinta
       krita
- #    kdePackages.kcharselect
-     ];
+    ];
   };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim-full
-    xfce.xfce4-clipman-plugin
+    xfce4-clipman-plugin
+    xfce4-genmon-plugin
     wget
     mc
     file
     unrar-wrapper
     p7zip
-    peazip
-    cryptomator
     bc
-    w3m
+    links2
     htop
     fastfetch
-    killall
+    psmisc
     xkill
-    putty
     screen
     imsprog
     flashrom
     nmap
     wol
     ethtool
-    angryipscanner
-    rustdesk-flutter
     cifs-utils
     lm_sensors
     smartmontools
     mesa-demos
     inxi
-    brasero
-    ventoy-full
-    gnome-disk-utility
-    remmina
     appimage-run # + .AppImage path 
     libmtp
     gphoto2
@@ -202,7 +194,7 @@
       "ventoy"
   ];
 
-  # pipx and useful utilities.
+  # Useful utilities.
   environment.localBinInPath = true;
   programs = {
     dconf.enable = true;
@@ -211,25 +203,20 @@
       package = pkgs.vim-full;
       defaultEditor = true;
     };
+    wireshark = {
+      enable = true;
+      package = pkgs.wireshark;
+      dumpcap.enable = true;
+    };
+    tmux.enable = true;
     gphoto2.enable = true;
     seahorse.enable = true; # Required by Nextcloud.
   };
-
-  # Connect to old SMB 1.0 servers.
-  services.samba = {
-    enable = true;
-    settings = {
-      global = {
-        workgroup = "WORKGROUP";
-        security = "user";
-        "client min protocol" = "CORE";
-      };
-    };
-  };
+  services.gnome.gnome-keyring.enable = true; # Required by Nextcloud.
+  services.geoclue2.enable = true;
 
   # Remote filesystems support.
   services.gvfs.enable = true;
-  services.gnome.gnome-keyring.enable = true;
   security.wrappers."mount.cifs" = {
 	program = "mount.cifs";
 	source = "${lib.getBin pkgs.cifs-utils}/bin/mount.cifs";
@@ -239,7 +226,7 @@
   };
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
   
   # Better power management.
   powerManagement.enable = true;
@@ -255,16 +242,12 @@
 
   # Network settings.
   networking = {
-    hostName = "nixos-amd"; # Define your hostname.
-    networkmanager = {
-      enable = true;  # Easiest to use and most distros use this by default.
-      appendNameservers = [ "192.168.0.7" "192.168.0.9" ];
-    };
+    hostName = "nixos-amd";
+    networkmanager.enable = true;
     firewall = {
       enable = true;
-      extraCommands = ''iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns'';
       allowedTCPPorts = [ 21115 21116 21117 53317 ];
-      allowedUDPPorts = [ 9 21116 5353 ];
+      allowedUDPPorts = [ 9 21116 53317 ];
     };
     interfaces = {
       enp0s10 = {
