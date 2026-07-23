@@ -3,8 +3,6 @@
 
 timestamp=$(date +%Y%m%d-%H%M%S)
 
-#!/bin/bash
-
 # Prompt the user to choose the directory source
 read -p "Do you want to scan the current directory? (Y/n): " choice
 
