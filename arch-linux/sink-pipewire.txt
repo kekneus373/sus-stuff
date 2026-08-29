@@ -1,0 +1,101 @@
+Short answer — what to do
+Create a virtual sink (a “combined” sink), route the two outputs into that sink’s playback ports, then link the sink’s monitor ports to a virtual source (virtual microphone). Use PipeWire tools (pw-link / pw-cli) or the equivalent PulseAudio-style commands if you prefer pipewire-pulse/pactl. Below are concrete steps and an example using the approach and links shown in the referenced posts.
+
+Here is the walktrough:
+
+Create the combined-sink interface
+sh
+
+pactl load-module module-null-sink media.class=Audio/Sink sink_name=my-combined-sink channel_map=stereo
+Create a Virtual Microphone
+sh
+
+pactl load-module module-null-sink media.class=Audio/Source/Virtual sink_name=my-virtualmic channel_map=front-left,front-right
+Link your microphone & the music player output into the combined sink
+Note: The microphone interface name & the music player output interface name may be different. Run pw-link -o to show list of the outputs.
+
+sh
+
+pw-link spotify:output_FL my-combined-sink:playback_FL
+pw-link spotify:output_FR my-combined-sink:playback_FR
+
+pw-link alsa_input.pci-0000_00_1f.3.analog-stereo:capture_FL  my-combined-sink:playback_FL
+pw-link alsa_input.pci-0000_00_1f.3.analog-stereo:capture_FR  my-combined-sink:playback_FR
+Link your combined sink to the virtual microphone
+sh
+
+pw-link my-combined-sink:monitor_FL my-virtualmic:input_FL
+pw-link my-combined-sink:monitor_FR my-virtualmic:input_FR
+Now you can tell the voice software to make use this virtual microphone or set the virtual microphone as the default voice input.
+
+[1]
+
+This shows the exact wiring you want: route outputs -> combined sink, then route the combined sink’s monitor into a virtual source (virtual mic). Use pw-link to wire specific channels/ports.
+
+One more PulseAudio-style walkthrough (same idea, useful if using pipewire-pulse / pactl):
+
+Create a sink and loopback your real microphone to it
+
+sh
+
+pactl load-module module-null-sink \
+   sink_name=mix-for-virtual-mic \
+   sink_properties=device.description=Mix-for-Virtual-Microphone
+
+pactl load-module module-loopback \
+   source=<your real pulse audio source here> \
+   sink=mix-for-virtual-mic latency_msec=20
+Create your virtual mic and send it's stream to the "mix" sink and the default audio output
+
+sh
+
+pactl load-module module-pipe-source \
+   source_name=virtmic \
+   file=/home/pyle/dev/virtmic format=s16le rate=16000 channels=1
+
+pactl load-module module-combine-sink \
+   sink_name=virtual-microphone-and-speakers \
+   slaves=mix-for-virtual-mic,@DEFAULT_SINK@
+Remap the monitor of of the "mix" as a pulse audio source that apps will use as a microphone
+
+sh
+
+pactl load-module module-remap-source \
+   master=mix-for-virtual-mic.monitor \
+   source_properties=device.description=mixed-mic
+``
+[2]
+
+This demonstrates the equivalent approach using pactl modules (null sink, loopback, remap source) — useful if you interact with the pipewire-pulse compatibility layer or prefer pactl-level workflow.
+
+Practical step-by-step (recommended)
+List nodes/ports so you know names:
+pw-cli dump Node or pw-link -o (to list outputs) and pw-link -i (inputs).
+Create a null sink to act as the combiner:
+pactl load-module module-null-sink sink_name=my-combined-sink channel_map=stereo
+or create a loopback/virtual device via a PipeWire config snippet (if you prefer persistent devices).
+Route the two playback ports (your alsa_playback.android-mic:output_FL and :output_FR) into the corresponding playback channels of the combined sink:
+Using pw-link, e.g.:
+pw-link alsa_playback.android-mic:output_FL my-combined-sink:playback_FL
+pw-link alsa_playback.android-mic:output_FR my-combined-sink:playback_FR
+Create or use a virtual source whose inputs are the combined sink’s monitor ports:
+Create a virtual source (null-sink + use its .monitor) or a dedicated virtual source node.
+Link monitor -> virtual mic inputs:
+pw-link my-combined-sink:monitor_FL my-virtualmic:input_FL
+pw-link my-combined-sink:monitor_FR my-virtualmic:input_FR
+Select the virtual mic in the app (or set it as default capture device).
+Tips & alternatives
+If you use pipewire-pulse and want transient testing, pactl commands from the second quote are quicker to run interactively.
+For persistent configuration, create a small PipeWire config snippet (user ~/.config/pipewire/pipewire.conf.d/) that creates the virtual devices at session start.
+Use pavucontrol or your desktop audio settings to verify the new virtual source appears and to set it as default for apps.
+If latencies matter (live voice chat), prefer pw-loopback or module-loopback with small latency settings and test for echo/feedback.
+Next steps (commands to try now)
+List nodes/ports: pw-link -o and pw-link -i
+Create a test combined sink (pactl):
+pactl load-module module-null-sink sink_name=test-combined channel_map=stereo
+Link outputs into it:
+pw-link alsa_playback.android-mic:output_FL test-combined:playback_FL
+pw-link alsa_playback.android-mic:output_FR test-combined:playback_FR
+Link monitor to a virtual source (create one or use a remap):
+pw-link test-combined:monitor_FL some-virtual-src:input_FL (replace with names found via pw-link -o)
+If you want, tell me the exact node names you see from pw-link -o and I’ll give the precise pw-link or pactl commands to run.

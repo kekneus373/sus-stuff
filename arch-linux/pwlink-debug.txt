@@ -1,0 +1,32 @@
+[resu@archlinux-f574k ~]$ pw-link -o
+Midi-Bridge:Midi Through Port-0 (capture)
+bluez_midi.server:out
+alsa_output.pci-0000_00_1b.0.analog-stereo:monitor_FL
+alsa_output.pci-0000_00_1b.0.analog-stereo:monitor_FR
+alsa_input.pci-0000_00_1b.0.analog-stereo:capture_FL
+alsa_input.pci-0000_00_1b.0.analog-stereo:capture_FR
+kindle-sink:monitor_FL
+kindle-sink:monitor_FR
+kindle-virtualmic:capture_FL
+kindle-virtualmic:capture_FR
+alsa_playback.android-mic:output_FL
+alsa_playback.android-mic:output_FR
+[resu@archlinux-f574k ~]$ pw-link -l
+alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FL
+  |<- alsa_playback.android-mic:output_FL
+alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FR
+  |<- alsa_playback.android-mic:output_FR
+alsa_playback.android-mic:output_FL
+  |-> alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FL
+alsa_playback.android-mic:output_FR
+  |-> alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FR
+[resu@archlinux-f574k ~]$ strace -f -e trace=open,openat,connect,poll pw-link "alsa_playback.android-mic:output_FL" "kindle-sink:monitor_FL" 2>&1 | grep -i 'No such file\|ENOENT'
+openat(AT_FDCWD, "/usr/lib/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+[pid  5521] openat(AT_FDCWD, "/usr/share/locale/en_US.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid  5521] openat(AT_FDCWD, "/usr/share/locale/en_US.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid  5521] openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid  5521] openat(AT_FDCWD, "/usr/share/locale/en.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid  5521] openat(AT_FDCWD, "/usr/share/locale/en.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+[pid  5521] openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+failed to link ports: No such file or directory
+
