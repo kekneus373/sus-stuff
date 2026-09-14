@@ -1,10 +1,12 @@
 # ------------------------------------------------------------------------
-# ---        NixOS-HP configuration file from 11.04.2026 22:00.        ---
+# ---        NixOS-HP configuration file from 24.08.2026 20:04.        ---
 # ------------------------------------------------------------------------
 # Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
 { config, lib, pkgs, ... }:
+
+# Include Xprinter XP-80TS driver.
 
 let
   xprinter-driver = pkgs.callPackage (
@@ -27,7 +29,7 @@ in {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelParams = [ "mem_sleep_default=deep" "i915.enable_psr=0" "i915.enable_fbc=0" "i915.enable_dc=0" "intel_iommu=igfx_off" ];
+    kernelParams = [ "mem_sleep_default=deep" "i915.enable_psr=0" "i915.enable_fbc=0" "i915.enable_dc=0" "intel_iommu=igfx_off" ]; # Some iHD 5500 quirks for less freezes.
     kernelModules = [ "zram" ];
     kernel.sysctl."vm.swappiness" = 15;
   };
@@ -37,32 +39,17 @@ in {
 
   # Network storage.
   fileSystems."/mnt/smb0" = {
-      device = "//10.138.72.31/borg";
+      device = "//hsvuldo-server/borg";
       fsType = "cifs";
       options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" ];
   };
-  fileSystems."/mnt/smb1" = {
-      device = "//192.168.0.91/data0";
-      fsType = "cifs";
-      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
-  };
-  fileSystems."/mnt/smb2" = {
-      device = "//192.168.0.91/data1";
-      fsType = "cifs";
-      options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
-  };
-  fileSystems."/mnt/smb3" = {
-      device = "//192.168.0.8/Common";
-      fsType = "cifs";
-      options = [ "username=KabzukSP" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
-  };
   fileSystems."/mnt/sc" = {
-      device = "//10.138.72.31/TrueNAS-SC";
+      device = "//hsvuldo-server/TrueNAS-SC";
       fsType = "cifs";
       options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
   fileSystems."/mnt/sus" = {
-      device = "//10.138.72.31/sus";
+      device = "//hsvuldo-server/sus";
       fsType = "cifs";
       options = [ "username=bogdan" "users" "noauto" "soft" "echo_interval=10" "retrans=2" "closetimeo=3" "x-gvfs-show" ];
   };
@@ -89,28 +76,28 @@ in {
   # Font choice.
   console = {
     font = "${lib.getBin pkgs.terminus_font}/share/consolefonts/ter-v20n.psf.gz";
-    useXkbConfig = true; # use xkb.options in tty.
+    useXkbConfig = true; # Use xkb.options in tty.
   };
   fonts = {
     enableDefaultPackages = true;
-    packages = with pkgs; [ pkgs.terminus_font ];
+    packages = with pkgs; [ pkgs.terminus_font ]; # Bigger TTY fonts.
   };
 
   # Hardware setup.
   hardware = {
     graphics = {
-      extraPackages = with pkgs; [ intel-media-driver intel-vaapi-driver intel-compute-runtime-legacy1 ];
-      #enable32Bit = true;
+      extraPackages = with pkgs; [ intel-media-driver intel-vaapi-driver intel-compute-runtime-legacy1 ]; # Include legacy drivers in case the newer one breaks.
+      #enable32Bit = true; # For Windows games.
     };
     bluetooth = {
-      enable = true; # enables support for Bluetooth
-      powerOnBoot = true; # powers up the default Bluetooth controller on boot
+      enable = true; # Bluetooth support.
+      powerOnBoot = true; # Power up the default BT controller on boot.
     };
     cpu.intel.updateMicrocode = true;
     intel-gpu-tools.enable = true;
     enableRedistributableFirmware = true;
   };
-  environment.sessionVariables = { LIBVA_DRIVER_NAME="iHD"; };
+  environment.sessionVariables = { LIBVA_DRIVER_NAME="iHD"; }; # Choose preferred GPU driver.
 
   # Enable the X11 windowing system. 
   services = {
@@ -127,11 +114,11 @@ in {
 
   # Enable CUPS to print documents, Avahi Bonjour to discover network printers.
   services = {
-    avahi = {
-      enable = true;
-      nssmdns4 = true;
-      openFirewall = true;
-    }; 
+    #avahi = {
+     # enable = true;
+     # nssmdns4 = true;
+     # openFirewall = true;
+    #}; 
     printing = {
       enable = true;
       drivers = with pkgs; [ hplip xprinter-driver ];
@@ -153,21 +140,18 @@ in {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.wynz = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "camera" "media" "audio" "video" "render" "kvm" "lp" "lpadmin" ];
+    extraGroups = [ "wheel" "camera" "media" "audio" "video" "render" "kvm" "lp" "lpadmin" "wireshark" ];
     packages = with pkgs; [
-      kdePackages.kcolorchooser
-      # --- UUPDUMP ---
       aria2
-      wimlib
-      cdrkit
-      cabextract
-      chntpw
+      apktool
+      android-tools
       uget
-      pipx # yt-dlp
+      yt-dlp
       brave
       thunderbird
       bleachbit
-      # --- Webcam apps ---
+      brasero
+      gnome-disk-utility
       kdePackages.kamoso
       kdePackages.qrca
       borgbackup
@@ -189,20 +173,22 @@ in {
       pdfarranger
       localsend
       filezilla
+      rustdesk-flutter
+      remmina
+      angryipscanner
       gimp3
       pinta
       krita
+      luanti-client
+      calibre
       kdePackages.kdenlive
       kdePackages.falkon
       kdePackages.filelight
       kdePackages.ktorrent
       kdePackages.kalk
       kdePackages.kclock
-      # --- Games ---
-      luanti-client
-      # --- E-reader suppor. SONY PRS-600 workaround ---
-      calibre
-      ghostscript # $ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -o output.pdf input.pdf
+      kdePackages.kcolorchooser
+      kdePackages.kcharselect
     ];
   };
 
@@ -213,10 +199,12 @@ in {
       mc
       unrar-wrapper
       p7zip
+      zip
       bc
-      w3m
+      file
+      links2
       htop
-      killall
+      psmisc
       microcode-intel
       intel-gpu-tools
       inteltool
@@ -224,34 +212,29 @@ in {
       mesa-demos
       libva-utils
       putty
-      setserial
       screen
       cifs-utils
-      samba
       glib
       lm_sensors
       nmap
+      host
       ethtool
+      net-tools
       wol
       smartmontools
       inxi
       fastfetch
       ventoy-full
-      brasero
-      gnome-disk-utility
-      remmina
-      angryipscanner
-      appimage-run # + .AppImage path
+      ntfs3g
+      exfatprogs
+      dosfstools
+      appimage-run
       libmtp
       libgphoto2
       gphoto2fs
       kdePackages.kamera
-      # xxx BROKEN xxx
       anydesk
-      # --- Games ---
       bottles
-      # lutris-free # UA-GTA
-      # winetricks  # UA-GTA
     ];
 
   # Allow Unfree packages + Anti-Anti-Ventoy overlay.
@@ -271,10 +254,9 @@ in {
       "anydesk"
       "ventoy"
       "printer-driver-xprinter"
-     # "nomachine-client"
    ];
 
-  # pipx and QEMU.
+  # Virtualization support.
   environment.localBinInPath = true;
   virtualisation.libvirtd= {
     enable = true;
@@ -289,20 +271,15 @@ in {
       package = pkgs.vim-full;
       defaultEditor = true;
     };
+    wireshark = {
+      enable = true;
+      package = pkgs.wireshark;
+      dumpcap.enable = true;
+    };
+    tmux.enable = true;
     gphoto2.enable = true;
   };
-
-#  Connect to old SMB 1.0 servers.
-#  services.samba = {
-#    enable = true;
-#    settings = {
-#      global = {
-#        workgroup = "WORKGROUP";
-#        security = "user";
-#        "client min protocol" = "CORE";
-#      };
-#    };
-#  };
+  services.geoclue2.enable = true;
 
   # Remote filesystems support.
   services.gvfs.enable = true;
@@ -313,6 +290,9 @@ in {
     group = "root";
     setuid = true;
   };
+
+  # Unlock KWallet on login.
+  security.pam.services."wynz".kwallet.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -347,7 +327,7 @@ in {
     };
   };
 
-  # In case units above refuse to run.
+  # In case units above break.
   environment.etc."systemd/system-sleep/retouchpad" = {
     enable = false;
     text = ''
@@ -370,18 +350,17 @@ in {
   services.power-profiles-daemon.enable = true;
     services.logind = {
       settings.Login = {
-        HandleLidSwitch = "suspend-then-hibernate"; # Suspend first then hibernate when closing the lid
-        HandlePowerKey = "hibernate"; # Hibernate on power button pressed
+        HandleLidSwitch = "suspend-then-hibernate"; # Suspend first then hibernate when closing the lid.
+        HandlePowerKey = "hibernate"; # Hibernate on power button pressed.
         HandleSuspendKey = "suspend";
-        HandlePowerKeyLongPress = "hybrid-sleep";
-        IdleAction = "suspend-then-hibernate";
-        IdleActionSec = "1h";
+        IdleAction = "suspend-then-hibernate"; # To invoke suspend action at login screen.
+        IdleActionSec = "1h"; # Time to suspend @ SDDM.
       };
     };
-  systemd.sleep.extraConfig = ''
-    HibernateDelaySec=30m
-    SuspendState=mem
-  '';
+  systemd.sleep.settings.Sleep = {
+    HibernateDelaySec = "30m";
+    SuspendState = "mem";
+  };
 
   # OOM killer.
   services.earlyoom = {
@@ -391,20 +370,16 @@ in {
 
   # Network settings.
   networking = {
-    hostName = "nixos-hp"; # Define your hostname.
-    networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+    hostName = "nixos-hp";
+    networkmanager.enable = true;
     firewall = {
       enable = true;
-      extraCommands = ''iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns'';
-      allowedTCPPorts = [ 53317 ];
-      allowedUDPPorts = [ 9 5353 53317 ];
-    };
-    hosts = {
-      "10.138.72.31" = [ "hsvuldo-server" ];
+      allowedTCPPorts = [ 21115 21116 21117 53317 ];
+      allowedUDPPorts = [ 9 21116 53317 ];
     };
     interfaces = {
       enp0s25 = {
-        wakeOnLan.enable = true;
+        wakeOnLan.enable = true; # Turn on WOL at systemd level.
       };
     };
   };
