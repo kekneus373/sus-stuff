@@ -1,3 +1,10 @@
+# Cheap Chinese USB Bluetooth 5 Dongle (with V5.* text)
+
+Bought on AliExpress for I believe $2. Works amazingly well.
+
+*`dmesg`* :
+
+```
 [   23.579014] usbcore: registered new interface driver btusb
 [   23.586034] Bluetooth: hci0: CSR: Setting up dongle with HCI ver=12 rev=0201
 [   23.586043] Bluetooth: hci0: LMP ver=12 subver=0201; manufacturer=10
@@ -5,8 +12,10 @@
 [   23.883905] Bluetooth: hci0: HCI Delete Stored Link Key command is advertised, but not supported.
 [   23.883913] Bluetooth: hci0: HCI Read Default Erroneous Data Reporting command is advertised, but not supported.
 [   23.883915] Bluetooth: hci0: HCI Set Event Filter command not supported.
+```
 
+*`lsusb`* :
 
-lsusb :
-
+```
 Bus 002 Device 002: ID 0a12:0001 Cambridge Silicon Radio, Ltd Bluetooth Dongle (HCI mode)
+```
