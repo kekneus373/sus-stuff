@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# ---        NixOS-HP configuration file from 24.08.2026 20:04.        ---
+# ---        NixOS-HP configuration file from 25.09.2026 18:44.        ---
 # ------------------------------------------------------------------------
 # Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
@@ -159,6 +159,7 @@ in {
       doublecmd
       meld
       kdePackages.kompare
+      tree
       czkawka
       curtail
       libreoffice-qt6-fresh
@@ -202,6 +203,7 @@ in {
       zip
       bc
       file
+      symlinks
       links2
       htop
       psmisc
@@ -215,6 +217,7 @@ in {
       screen
       cifs-utils
       glib
+      git
       lm_sensors
       nmap
       host
@@ -237,7 +240,7 @@ in {
       bottles
     ];
 
-  # Allow Unfree packages + Anti-Anti-Ventoy overlay.
+  # Allow Unfree packages + Anti-Anti-Ventoy&Minetest overlay.
   nixpkgs.overlays = [
     (self: super: {
       ventoy = super.ventoy.overrideAttrs (old: {
