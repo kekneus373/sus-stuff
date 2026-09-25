@@ -4,8 +4,7 @@ Everything collection 📚
 This repository contains modular configurations for various platforms and applications. Each folder includes platform-specific settings, logs, and scripts tailored to target environments.
 
 ## License & Contributions
-- **Unlicense** apart from forked presets:
-	- `audacity/DeleteClipGaps.ny` - *Copyright Steve Daulton 2021 (https://audionyq.com)*
+- **Unlicense** unless explicitly stated otherwise
 - **Contributions:** Fork, contribute via PRs or GitHub Issues. Test thoroughly!
 
 <mark>⚠️ Most guides were moved to my Gists:</mark> **https://gist.github.com/kekneus373**
@@ -22,14 +21,15 @@ This repository contains modular configurations for various platforms and applic
 | `dd.txt`                         | Simple DiskDestroyer one-liner 💀🥀.                                                        |
 | `default-cifs.conf`              | Default CIFS mount options on NixOS 25.11.                                                  |
 | `docker-ubuntu.md`               | How to install Docker CLI on Ubuntu Server.                                                 |
-| `mount-netgear.txt`              | 2 commands for mounting NetGear ReadyNAS Duo drives under NixOS in 2 minutes.               |
+| `emoji.txt`                      | Most-used emojis so I don't need an external picker.                                        |
+| `mount-netgear.txt`              | 2 commands for mounting NetGear ReadyNAS Duo drives under NixOS in 2 minutes.              |
 | `murmur.ini`                     | Last used Mumble server config (2024).                                                      |
-| `pbs-calendar.md`                | Good backup retention setup for Proxmox Backup Server.                                      |
+| `pbs-calendar.md`                | Good backup retention setup for Proxmox Backup Server.                                |
 | `pcspkr-chat.md`                 | ChatGPT about enabling PC speaker/buzzer in Debian.                                         |
-| `prs-plus-advice.txt`            | Should you flash your Sony E-Book Reader to PRS+ custom ROM?                                |
-| `remmina-snap.txt`               | Standard message from Remmina snap about giving it access to I/O devices (2024).            |
-| `remove-xfce-install-lxqt.odt`   | ChatGPT guide on how to switch to LXQt w/o reinstalling.                                    |
-| `truenas-experiments.txt`        | Steps I've taken while setting up TrueNAS SCALE in 2025 while migrating from NAS4Free.      |
+| `prs-plus-advice.txt`            | Should you flash your Sony E-Book Reader to PRS+ custom ROM?                            |
+| `remmina-snap.txt`               | Standard message from Remmina snap about giving it access to I/O devices (2024).          |
+| `remove-xfce-install-lxqt.odt`   | ChatGPT guide on how to switch to LXQt w/o reinstalling.                          |
+| `truenas-experiments.txt`        | Steps I've taken while setting up TrueNAS SCALE in 2025 while migrating from NAS4Free.    |
 | `zswap-case-study.txt`           | Finding out why my main machine is slow as hell 🗿.                                         |
 
 ### 📂 Platform-Specific Folders
@@ -44,7 +44,7 @@ This repository contains modular configurations for various platforms and applic
 - ❄️ Intel Bay Trail hangs and freezes checklist (`chat-baytrail-git.md`)
 - 📜 Logs capture raw system events (e.g., `suspend-wakeup-in-loop-git.log`, `firstfreeze-or-oomd.log`).
 - 🐧 Arch Linux *LXQt*
-	- 📂 Entire `/etc` dir to help others get started
+	- 📂 Entire `/etc` dir + dotfiles to help others get started
 	- ⚡ Scripts for optimizing workflow for those who are low on RAM and can't "afford" a sane DE 😅
  
 #### 📂 Archive
@@ -60,11 +60,11 @@ This repository contains modular configurations for various platforms and applic
 ### 🖥️ Desktop/Server Applications
 
 #### 🎙️ Audacity
-- 📜 Script templates (e.g., `DeleteClipGaps.ny`)
-- 🖼️ My preferred Layout screenshot
+- 📜 Scripts (e.g., `DeleteClipGaps.ny`)
+- 🖼️ Preferred Layout screenshot
 
 #### 🎨 GIMP
-- 🖼️ Just a layout screenie
+- 🖼️ Layout + app settings
 
 #### 🎬 Kdenlive
 - 🎭 Theme/effect presets (e.g., `bonkers-chromakey.xml`, `720p-fast-forward.xml`)
@@ -87,7 +87,7 @@ This repository contains modular configurations for various platforms and applic
 - 🔧 Shared folder host permissions fix (`fix-permissions-public0.sh`)
 - 🕵️ Tor proxy startup (`tor.bash`)
 - 🌐 Falkon separate profile startup (`falkonschool.bash`)
-- 📦 Installation of the Nix package manager (df-h... used space comparison, `fedora-nix.md` guide)
+- 📦 Installation of the Nix package manager (`df -h` used space comparison, `fedora-nix.md` guide)
 
 #### 🌿 Linux Mint
 - 🍂 Didn't use it much, so there are mostly logs from the above mentioned device.
@@ -112,6 +112,6 @@ This repository contains modular configurations for various platforms and applic
 ## 🚀 How to Use
 
 1. 🎯 **Target a Platform**: Navigate to the corresponding folder (e.g., `/arch` for Arch Linux).
-2. 📂 **Access Logs, Scripts and Configurations**: Check relevant files like `dmesg16022026.log` for debugging and so on.
+2. 📂 **Access Logs, Scripts and Configurations**: Check relevant files for debugging and so on.
 
 > Written with [StackEdit](https://stackedit.io/).
