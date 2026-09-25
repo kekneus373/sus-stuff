@@ -19,11 +19,8 @@ This repository contains modular configurations for various platforms and applic
 | `Templates.zip`                  | Shared templates of empty LibreOffice documents.                                            |
 | **`applications-list.md`**       | List of my most-used applications with brief descriptions. Prolly the most useful one here. |
 | `avahi-investigation.md`         | Correct Avahi mDNS Daemon setup.                                                            |
-| `brasero-session-bad-medium.log` | Log after a failed burn attempt to a scratched CD.                                          |
-| `bt-csr-dongle10.txt`            | How cheap Bluetooth dongles from AliExpress are detected in Linux.                          |
 | `dd.txt`                         | Simple DiskDestroyer one-liner 💀🥀.                                                        |
 | `default-cifs.conf`              | Default CIFS mount options on NixOS 25.11.                                                  |
-| dmesg_2026-01-19-...             | Some random Linux kernel log from an unknown OS 👌.                                         |
 | `docker-ubuntu.md`               | How to install Docker CLI on Ubuntu Server.                                                 |
 | `mount-netgear.txt`              | 2 commands for mounting NetGear ReadyNAS Duo drives under NixOS in 2 minutes.               |
 | `murmur.ini`                     | Last used Mumble server config (2024).                                                      |
@@ -46,12 +43,13 @@ This repository contains modular configurations for various platforms and applic
 - 🐞 Core development/debugging scripts for my buggy Acer Aspire E3-112 notebook.
 - ❄️ Intel Bay Trail hangs and freezes checklist (`chat-baytrail-git.md`)
 - 📜 Logs capture raw system events (e.g., `suspend-wakeup-in-loop-git.log`, `firstfreeze-or-oomd.log`).
-
-#### 🐧 Arch Linux LXQt General
-- ⚡ I'm developing a series of scripts for optimizing workflow on Arch LXQt for those who are low on RAM and can't "afford" KDE or whatever else. I plan:
-	- 🖨️ Debian CUPS printer driver package installer / uninstaller
-	- ⌨️🖱️ Script for restoring keyboard and mouse settings (done, needs reviewing & uploading)
-- 📂 Also I'll post my whole `/etc` to help others get started quicker - stay tuned!
+- 🐧 Arch Linux *LXQt*
+	- 📂 Entire `/etc` dir to help others get started
+	- ⚡ Scripts for optimizing workflow for those who are low on RAM and can't "afford" a sane DE 😅
+ 
+#### 📂 Archive
+- 📜 Old (debug) log entries from different hardware
+- 🛠️ All files are for reference
 
 #### 📡 OpenWrt - Wireless Freedom
 - 🏗️ Getting Started & Build
