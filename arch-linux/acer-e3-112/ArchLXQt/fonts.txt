@@ -1,0 +1,389 @@
+[wynz@nixos-hp:~/.local/share/fonts]$ tree
+.
+├── Andale_Mono.ttf
+├── Arial_Black.ttf
+├── Arial_Bold_Italic.ttf
+├── Arial_Bold.ttf
+├── Arial_Italic.ttf
+├── Arial.ttf
+├── c
+│   ├── Comfortaa-Bold.ttf
+│   ├── Comfortaa-Light.ttf
+│   ├── Comfortaa-Medium.ttf
+│   ├── Comfortaa-Regular.ttf
+│   ├── Comfortaa-SemiBold.ttf
+│   ├── Commissioner-Black.ttf
+│   ├── Commissioner-Bold.ttf
+│   ├── Commissioner-ExtraBold.ttf
+│   ├── Commissioner-ExtraLight.ttf
+│   ├── Commissioner-Light.ttf
+│   ├── Commissioner-Medium.ttf
+│   ├── Commissioner-Regular.ttf
+│   ├── Commissioner-SemiBold.ttf
+│   └── Commissioner-Thin.ttf
+├── calibrib.ttf
+├── calibrii.ttf
+├── calibri.ttf
+├── calibriz.ttf
+├── cambriab.ttf
+├── cambriai.ttf
+├── cambria.ttc
+├── cambriaz.ttf
+├── candarab.ttf
+├── candarai.ttf
+├── candara.ttf
+├── candaraz.ttf
+├── Comic_Sans_MS_Bold.ttf
+├── Comic_Sans_MS.ttf
+├── consolab.ttf
+├── consolai.ttf
+├── consola.ttf
+├── consolaz.ttf
+├── constanb.ttf
+├── constani.ttf
+├── constan.ttf
+├── constanz.ttf
+├── corbelb.ttf
+├── corbeli.ttf
+├── corbel.ttf
+├── corbelz.ttf
+├── Courier_New_Bold_Italic.ttf
+├── Courier_New_Bold.ttf
+├── Courier_New_Italic.ttf
+├── Courier_New.ttf
+├── d
+│   ├── DS_DIGIB.ttf
+│   ├── DS_DIGII.ttf
+│   ├── DS_DIGI.ttf
+│   └── DS_DIGIT.ttf
+├── e
+│   ├── e_Ukraine_Bold.otf
+│   ├── e_Ukraine_Light.otf
+│   ├── e_Ukraine_Medium.otf
+│   ├── e_Ukraine_Regular.otf
+│   ├── e_Ukraine_Thin.otf
+│   ├── e_Ukraine_UltraLight.otf
+│   ├── Eurostile_Extended_Bold.ttf
+│   ├── Exo2-BlackItalic.ttf
+│   ├── Exo2-Black.ttf
+│   ├── Exo2-BoldItalic.ttf
+│   ├── Exo2-Bold.ttf
+│   ├── Exo2-ExtraBoldItalic.ttf
+│   ├── Exo2-ExtraBold.ttf
+│   ├── Exo2-ExtraLightItalic.ttf
+│   ├── Exo2-ExtraLight.ttf
+│   ├── Exo2-Italic.ttf
+│   ├── Exo2-LightItalic.ttf
+│   ├── Exo2-Light.ttf
+│   ├── Exo2-MediumItalic.ttf
+│   ├── Exo2-Medium.ttf
+│   ├── Exo2-Regular.ttf
+│   ├── Exo2-SemiBoldItalic.ttf
+│   ├── Exo2-SemiBold.ttf
+│   ├── Exo2-ThinItalic.ttf
+│   └── Exo2-Thin.ttf
+├── eula.html
+├── g
+│   ├── Geologica_Auto_Black.ttf
+│   ├── Geologica_Auto_Bold.ttf
+│   ├── Geologica_Auto_ExtraBold.ttf
+│   ├── Geologica_Auto_ExtraLight.ttf
+│   ├── Geologica_Auto_Light.ttf
+│   ├── Geologica_Auto_Medium.ttf
+│   ├── Geologica_Auto_Regular.ttf
+│   ├── Geologica_Auto_SemiBold.ttf
+│   ├── Geologica_Black.ttf
+│   ├── Geologica_Bold.ttf
+│   ├── Geologica_Cursive_Black.ttf
+│   ├── Geologica_Cursive_Bold.ttf
+│   ├── Geologica_Cursive_ExtraBold.ttf
+│   ├── Geologica_Cursive_ExtraLight.ttf
+│   ├── Geologica_Cursive_Light.ttf
+│   ├── Geologica_Cursive_Medium.ttf
+│   ├── Geologica_Cursive_Regular.ttf
+│   ├── Geologica_Cursive_SemiBold.ttf
+│   ├── Geologica_ExtraBold.ttf
+│   ├── Geologica_ExtraLight.ttf
+│   ├── Geologica_Light.ttf
+│   ├── Geologica_Medium.ttf
+│   ├── Geologica_Regular.ttf
+│   └── Geologica_SemiBold.ttf
+├── Georgia_Bold_Italic.ttf
+├── Georgia_Bold.ttf
+├── Georgia_Italic.ttf
+├── Georgia.ttf
+├── i
+│   ├── IBM_Plex_Mono
+│   │   ├── IBMPlexMono-BoldItalic.ttf
+│   │   ├── IBMPlexMono-Bold.ttf
+│   │   ├── IBMPlexMono-ExtraLightItalic.ttf
+│   │   ├── IBMPlexMono-ExtraLight.ttf
+│   │   ├── IBMPlexMono-Italic.ttf
+│   │   ├── IBMPlexMono-LightItalic.ttf
+│   │   ├── IBMPlexMono-Light.ttf
+│   │   ├── IBMPlexMono-MediumItalic.ttf
+│   │   ├── IBMPlexMono-Medium.ttf
+│   │   ├── IBMPlexMono-Regular.ttf
+│   │   ├── IBMPlexMono-SemiBoldItalic.ttf
+│   │   ├── IBMPlexMono-SemiBold.ttf
+│   │   ├── IBMPlexMono-ThinItalic.ttf
+│   │   └── IBMPlexMono-Thin.ttf
+│   ├── IBM_Plex_Sans
+│   │   ├── IBMPlexSans-BoldItalic.ttf
+│   │   ├── IBMPlexSans-Bold.ttf
+│   │   ├── IBMPlexSans_Condensed-BoldItalic.ttf
+│   │   ├── IBMPlexSans_Condensed-Bold.ttf
+│   │   ├── IBMPlexSans_Condensed-ExtraLightItalic.ttf
+│   │   ├── IBMPlexSans_Condensed-ExtraLight.ttf
+│   │   ├── IBMPlexSans_Condensed-Italic.ttf
+│   │   ├── IBMPlexSans_Condensed-LightItalic.ttf
+│   │   ├── IBMPlexSans_Condensed-Light.ttf
+│   │   ├── IBMPlexSans_Condensed-MediumItalic.ttf
+│   │   ├── IBMPlexSans_Condensed-Medium.ttf
+│   │   ├── IBMPlexSans_Condensed-Regular.ttf
+│   │   ├── IBMPlexSans_Condensed-SemiBoldItalic.ttf
+│   │   ├── IBMPlexSans_Condensed-SemiBold.ttf
+│   │   ├── IBMPlexSans_Condensed-ThinItalic.ttf
+│   │   ├── IBMPlexSans_Condensed-Thin.ttf
+│   │   ├── IBMPlexSans-ExtraLightItalic.ttf
+│   │   ├── IBMPlexSans-ExtraLight.ttf
+│   │   ├── IBMPlexSans-Italic.ttf
+│   │   ├── IBMPlexSans-LightItalic.ttf
+│   │   ├── IBMPlexSans-Light.ttf
+│   │   ├── IBMPlexSans-MediumItalic.ttf
+│   │   ├── IBMPlexSans-Medium.ttf
+│   │   ├── IBMPlexSans-Regular.ttf
+│   │   ├── IBMPlexSans-SemiBoldItalic.ttf
+│   │   ├── IBMPlexSans-SemiBold.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-BoldItalic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-Bold.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-ExtraLightItalic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-ExtraLight.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-Italic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-LightItalic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-Light.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-MediumItalic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-Medium.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-Regular.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-SemiBoldItalic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-SemiBold.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-ThinItalic.ttf
+│   │   ├── IBMPlexSans_SemiCondensed-Thin.ttf
+│   │   ├── IBMPlexSans-ThinItalic.ttf
+│   │   └── IBMPlexSans-Thin.ttf
+│   └── Inter
+│       ├── Inter_18pt-BlackItalic.ttf
+│       ├── Inter_18pt-Black.ttf
+│       ├── Inter_18pt-BoldItalic.ttf
+│       ├── Inter_18pt-Bold.ttf
+│       ├── Inter_18pt-ExtraBoldItalic.ttf
+│       ├── Inter_18pt-ExtraBold.ttf
+│       ├── Inter_18pt-ExtraLightItalic.ttf
+│       ├── Inter_18pt-ExtraLight.ttf
+│       ├── Inter_18pt-Italic.ttf
+│       ├── Inter_18pt-LightItalic.ttf
+│       ├── Inter_18pt-Light.ttf
+│       ├── Inter_18pt-MediumItalic.ttf
+│       ├── Inter_18pt-Medium.ttf
+│       ├── Inter_18pt-Regular.ttf
+│       ├── Inter_18pt-SemiBoldItalic.ttf
+│       ├── Inter_18pt-SemiBold.ttf
+│       ├── Inter_18pt-ThinItalic.ttf
+│       ├── Inter_18pt-Thin.ttf
+│       ├── Inter_24pt-BlackItalic.ttf
+│       ├── Inter_24pt-Black.ttf
+│       ├── Inter_24pt-BoldItalic.ttf
+│       ├── Inter_24pt-Bold.ttf
+│       ├── Inter_24pt-ExtraBoldItalic.ttf
+│       ├── Inter_24pt-ExtraBold.ttf
+│       ├── Inter_24pt-ExtraLightItalic.ttf
+│       ├── Inter_24pt-ExtraLight.ttf
+│       ├── Inter_24pt-Italic.ttf
+│       ├── Inter_24pt-LightItalic.ttf
+│       ├── Inter_24pt-Light.ttf
+│       ├── Inter_24pt-MediumItalic.ttf
+│       ├── Inter_24pt-Medium.ttf
+│       ├── Inter_24pt-Regular.ttf
+│       ├── Inter_24pt-SemiBoldItalic.ttf
+│       ├── Inter_24pt-SemiBold.ttf
+│       ├── Inter_24pt-ThinItalic.ttf
+│       ├── Inter_24pt-Thin.ttf
+│       ├── Inter_28pt-BlackItalic.ttf
+│       ├── Inter_28pt-Black.ttf
+│       ├── Inter_28pt-BoldItalic.ttf
+│       ├── Inter_28pt-Bold.ttf
+│       ├── Inter_28pt-ExtraBoldItalic.ttf
+│       ├── Inter_28pt-ExtraBold.ttf
+│       ├── Inter_28pt-ExtraLightItalic.ttf
+│       ├── Inter_28pt-ExtraLight.ttf
+│       ├── Inter_28pt-Italic.ttf
+│       ├── Inter_28pt-LightItalic.ttf
+│       ├── Inter_28pt-Light.ttf
+│       ├── Inter_28pt-MediumItalic.ttf
+│       ├── Inter_28pt-Medium.ttf
+│       ├── Inter_28pt-Regular.ttf
+│       ├── Inter_28pt-SemiBoldItalic.ttf
+│       ├── Inter_28pt-SemiBold.ttf
+│       ├── Inter_28pt-ThinItalic.ttf
+│       └── Inter_28pt-Thin.ttf
+├── Impact.ttf
+├── j
+│   └── JetBrains_Mono
+│       ├── JetBrainsMono-BoldItalic.ttf
+│       ├── JetBrainsMono-Bold.ttf
+│       ├── JetBrainsMono-ExtraBoldItalic.ttf
+│       ├── JetBrainsMono-ExtraBold.ttf
+│       ├── JetBrainsMono-ExtraLightItalic.ttf
+│       ├── JetBrainsMono-ExtraLight.ttf
+│       ├── JetBrainsMono-Italic.ttf
+│       ├── JetBrainsMono-LightItalic.ttf
+│       ├── JetBrainsMono-Light.ttf
+│       ├── JetBrainsMono-MediumItalic.ttf
+│       ├── JetBrainsMono-Medium.ttf
+│       ├── JetBrainsMono-Regular.ttf
+│       ├── JetBrainsMono-SemiBoldItalic.ttf
+│       ├── JetBrainsMono-SemiBold.ttf
+│       ├── JetBrainsMono-ThinItalic.ttf
+│       └── JetBrainsMono-Thin.ttf
+├── m
+│   └── Michroma_Regular.ttf
+├── n
+│   ├── Nata_Sans
+│   │   ├── NataSans-Black.ttf
+│   │   ├── NataSans-Bold.ttf
+│   │   ├── NataSans-ExtraBold.ttf
+│   │   ├── NataSans-ExtraLight.ttf
+│   │   ├── NataSans-Light.ttf
+│   │   ├── NataSans-Medium.ttf
+│   │   ├── NataSans-Regular.ttf
+│   │   ├── NataSans-SemiBold.ttf
+│   │   └── NataSans-Thin.ttf
+│   └── Nunito_Sans
+│       ├── NunitoSans-BlackItalic.ttf
+│       ├── NunitoSans-Black.ttf
+│       ├── NunitoSans-BoldItalic.ttf
+│       ├── NunitoSans-Bold.ttf
+│       ├── NunitoSans-ExtraBoldItalic.ttf
+│       ├── NunitoSans-ExtraBold.ttf
+│       ├── NunitoSans-ExtraLightItalic.ttf
+│       ├── NunitoSans-ExtraLight.ttf
+│       ├── NunitoSans-Italic.ttf
+│       ├── NunitoSans-LightItalic.ttf
+│       ├── NunitoSans-Light.ttf
+│       ├── NunitoSans-Regular.ttf
+│       ├── NunitoSans-SemiBoldItalic.ttf
+│       └── NunitoSans-SemiBold.ttf
+├── o
+│   ├── OpenSans_BoldItalic.ttf
+│   ├── OpenSans_Bold.ttf
+│   ├── OpenSans_Condensed_BoldItalic.ttf
+│   ├── OpenSans_Condensed_Bold.ttf
+│   ├── OpenSans_Condensed_ExtraBoldItalic.ttf
+│   ├── OpenSans_Condensed_ExtraBold.ttf
+│   ├── OpenSans_Condensed_Italic.ttf
+│   ├── OpenSans_Condensed_LightItalic.ttf
+│   ├── OpenSans_Condensed_Light.ttf
+│   ├── OpenSans_Condensed_MediumItalic.ttf
+│   ├── OpenSans_Condensed_Medium.ttf
+│   ├── OpenSans_Condensed_Regular.ttf
+│   ├── OpenSans_Condensed_SemiBoldItalic.ttf
+│   ├── OpenSans_Condensed_SemiBold.ttf
+│   ├── OpenSans_ExtraBoldItalic.ttf
+│   ├── OpenSans_ExtraBold.ttf
+│   ├── OpenSans_Italic.ttf
+│   ├── OpenSans_LightItalic.ttf
+│   ├── OpenSans_Light.ttf
+│   ├── OpenSans_MediumItalic.ttf
+│   ├── OpenSans_Medium.ttf
+│   ├── OpenSans_Regular.ttf
+│   ├── OpenSans_SemiBoldItalic.ttf
+│   ├── OpenSans_SemiBold.ttf
+│   ├── OpenSans_SemiCondensed_BoldItalic.ttf
+│   ├── OpenSans_SemiCondensed_Bold.ttf
+│   ├── OpenSans_SemiCondensed_ExtraBoldItalic.ttf
+│   ├── OpenSans_SemiCondensed_ExtraBold.ttf
+│   ├── OpenSans_SemiCondensed_Italic.ttf
+│   ├── OpenSans_SemiCondensed_LightItalic.ttf
+│   ├── OpenSans_SemiCondensed_Light.ttf
+│   ├── OpenSans_SemiCondensed_MediumItalic.ttf
+│   ├── OpenSans_SemiCondensed_Medium.ttf
+│   ├── OpenSans_SemiCondensed_Regular.ttf
+│   ├── OpenSans_SemiCondensed_SemiBoldItalic.ttf
+│   └── OpenSans_SemiCondensed_SemiBold.ttf
+├── r
+│   ├── Roboto_Condensed
+│   │   ├── RobotoCondensed_BlackItalic.ttf
+│   │   ├── RobotoCondensed_Black.ttf
+│   │   ├── RobotoCondensed_BoldItalic.ttf
+│   │   ├── RobotoCondensed_Bold.ttf
+│   │   ├── RobotoCondensed_ExtraBoldItalic.ttf
+│   │   ├── RobotoCondensed_ExtraBold.ttf
+│   │   ├── RobotoCondensed_ExtraLightItalic.ttf
+│   │   ├── RobotoCondensed_ExtraLight.ttf
+│   │   ├── RobotoCondensed_Italic.ttf
+│   │   ├── RobotoCondensed_LightItalic.ttf
+│   │   ├── RobotoCondensed_Light.ttf
+│   │   ├── RobotoCondensed_MediumItalic.ttf
+│   │   ├── RobotoCondensed_Medium.ttf
+│   │   ├── RobotoCondensed_Regular.ttf
+│   │   ├── RobotoCondensed_SemiBoldItalic.ttf
+│   │   └── RobotoCondensed_SemiBold.ttf
+│   └── Roboto_Slab
+│       ├── RobotoSlab-Black.ttf
+│       ├── RobotoSlab-Bold.ttf
+│       ├── RobotoSlab-ExtraBold.ttf
+│       ├── RobotoSlab-ExtraLight.ttf
+│       ├── RobotoSlab-Light.ttf
+│       ├── RobotoSlab-Medium.ttf
+│       ├── RobotoSlab-Regular.ttf
+│       ├── RobotoSlab-SemiBold.ttf
+│       └── RobotoSlab-Thin.ttf
+├── s
+│   ├── SlaughterOfTheDeathRegular_7BEVA.ttf
+│   ├── Source_Code_Pro
+│   │   ├── SourceCodePro-BlackItalic.ttf
+│   │   ├── SourceCodePro-Black.ttf
+│   │   ├── SourceCodePro-BoldItalic.ttf
+│   │   ├── SourceCodePro-Bold.ttf
+│   │   ├── SourceCodePro-ExtraBoldItalic.ttf
+│   │   ├── SourceCodePro-ExtraBold.ttf
+│   │   ├── SourceCodePro-ExtraLightItalic.ttf
+│   │   ├── SourceCodePro-ExtraLight.ttf
+│   │   ├── SourceCodePro-Italic.ttf
+│   │   ├── SourceCodePro-LightItalic.ttf
+│   │   ├── SourceCodePro-Light.ttf
+│   │   ├── SourceCodePro-MediumItalic.ttf
+│   │   ├── SourceCodePro-Medium.ttf
+│   │   ├── SourceCodePro-Regular.ttf
+│   │   ├── SourceCodePro-SemiBoldItalic.ttf
+│   │   └── SourceCodePro-SemiBold.ttf
+│   └── Spectral_SC
+│       ├── SpectralSC-BoldItalic.ttf
+│       ├── SpectralSC-Bold.ttf
+│       ├── SpectralSC-ExtraBoldItalic.ttf
+│       ├── SpectralSC-ExtraBold.ttf
+│       ├── SpectralSC-ExtraLightItalic.ttf
+│       ├── SpectralSC-ExtraLight.ttf
+│       ├── SpectralSC-Italic.ttf
+│       ├── SpectralSC-LightItalic.ttf
+│       ├── SpectralSC-Light.ttf
+│       ├── SpectralSC-MediumItalic.ttf
+│       ├── SpectralSC-Medium.ttf
+│       ├── SpectralSC-Regular.ttf
+│       ├── SpectralSC-SemiBoldItalic.ttf
+│       └── SpectralSC-SemiBold.ttf
+├── Tahoma.ttf
+├── Times_New_Roman_Bold_Italic.ttf
+├── Times_New_Roman_Bold.ttf
+├── Times_New_Roman_Italic.ttf
+├── Times_New_Roman.ttf
+├── Trebuchet_MS_Bold.ttf
+├── Trebuchet_MS_Italic.ttf
+├── Trebuchet_MS.ttf
+├── Verdana_Bold_Italic.ttf
+├── Verdana_Bold.ttf
+├── Verdana_Italic.ttf
+├── Verdana.ttf
+└── Webdings.ttf
+
+22 directories, 364 files
