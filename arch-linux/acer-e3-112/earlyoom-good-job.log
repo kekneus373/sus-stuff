@@ -1,0 +1,34 @@
+Apr 15 08:15:32 archlinux-e3-112 systemd[1]: Started Early OOM Daemon.                                                                
+░░ Subject: A start job for unit earlyoom.service has finished successfully                                                           
+░░ Defined-By: systemd                                                                                                                
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel                                                              
+░░                                                                                                                                    
+░░ A start job for unit earlyoom.service has finished successfully.                                                                   
+░░                                                                                                                                    
+░░ The job identifier is 133.                                                                                                         
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]: earlyoom 1.9.0
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]: Notifying through D-Bus
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]: Will avoid killing process names that match regex '(^|/)(init|systemd|Xorg|sshd)$'
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]: mem total: 1843 MiB, user mem total: 1609 MiB, swap total: 1023 MiB
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]: sending SIGTERM when mem avail <= 10.00% and swap free <= 10.00%,
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]:         SIGKILL when mem avail <=  5.00% and swap free <=  5.00%
+Apr 15 08:15:33 archlinux-e3-112 earlyoom[414]: mem avail:  1581 of  1606 MiB (98.42%), swap free: 1023 of 1023 MiB (100.00%)
+Apr 15 08:25:32 archlinux-e3-112 earlyoom[414]: mem avail:  1110 of  1520 MiB (73.01%), swap free: 1023 of 1023 MiB (100.00%)
+Apr 15 08:35:33 archlinux-e3-112 earlyoom[414]: mem avail:  1153 of  1428 MiB (80.75%), swap free:  926 of 1023 MiB (90.50%)
+Apr 15 08:45:33 archlinux-e3-112 earlyoom[414]: mem avail:  1158 of  1435 MiB (80.74%), swap free:  926 of 1023 MiB (90.51%)
+Apr 15 08:55:33 archlinux-e3-112 earlyoom[414]: mem avail:   751 of  1246 MiB (60.30%), swap free:  680 of 1023 MiB (66.50%)
+Apr 15 09:05:33 archlinux-e3-112 earlyoom[414]: mem avail:   723 of  1223 MiB (59.12%), swap free:  674 of 1023 MiB (65.86%)
+Apr 15 09:15:34 archlinux-e3-112 earlyoom[414]: mem avail:   666 of  1288 MiB (51.72%), swap free:  548 of 1023 MiB (53.52%)
+Apr 15 23:01:47 archlinux-e3-112 earlyoom[414]: mem avail:   599 of  1229 MiB (48.74%), swap free:  560 of 1023 MiB (54.76%)
+Apr 15 23:11:47 archlinux-e3-112 earlyoom[414]: mem avail:   678 of  1229 MiB (55.20%), swap free:  421 of 1023 MiB (41.21%)
+Apr 15 23:21:48 archlinux-e3-112 earlyoom[414]: mem avail:   593 of  1226 MiB (48.34%), swap free:  399 of 1023 MiB (39.01%)
+Apr 15 23:31:48 archlinux-e3-112 earlyoom[414]: mem avail:   641 of  1026 MiB (62.49%), swap free:   68 of 1023 MiB ( 6.73%)
+Apr 15 23:41:50 archlinux-e3-112 earlyoom[414]: mem avail:   522 of  1054 MiB (49.54%), swap free:   75 of 1023 MiB ( 7.33%)
+Apr 15 23:51:51 archlinux-e3-112 earlyoom[414]: mem avail:   584 of  1053 MiB (55.49%), swap free:  100 of 1023 MiB ( 9.82%)
+Apr 16 00:01:52 archlinux-e3-112 earlyoom[414]: mem avail:   658 of  1085 MiB (60.64%), swap free:  111 of 1023 MiB (10.90%)
+Apr 16 00:11:53 archlinux-e3-112 earlyoom[414]: mem avail:   731 of  1210 MiB (60.39%), swap free:  293 of 1023 MiB (28.69%)
+Apr 16 00:21:54 archlinux-e3-112 earlyoom[414]: mem avail:   584 of  1037 MiB (56.33%), swap free:  112 of 1023 MiB (10.98%)
+Apr 16 00:31:55 archlinux-e3-112 earlyoom[414]: mem avail:   695 of  1285 MiB (54.12%), swap free:  586 of 1023 MiB (57.31%)
+Apr 16 00:41:55 archlinux-e3-112 earlyoom[414]: mem avail:   589 of  1290 MiB (45.69%), swap free:  549 of 1023 MiB (53.62%)
+Apr 16 00:51:56 archlinux-e3-112 earlyoom[414]: mem avail:   930 of  1273 MiB (73.08%), swap free:  473 of 1023 MiB (46.21%)
+Apr 16 01:01:56 archlinux-e3-112 earlyoom[414]: mem avail:   728 of  1251 MiB (58.19%), swap free:  486 of 1023 MiB (47.54%)
