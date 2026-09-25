@@ -1,0 +1,35 @@
+# ==========================================
+# Operating System Files
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehproject.top
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# ==========================================
+# Secrets and Environment Configuration
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.jks

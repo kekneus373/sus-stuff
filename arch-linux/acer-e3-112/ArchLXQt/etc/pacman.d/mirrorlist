@@ -1,0 +1,59 @@
+
+
+## Bulgaria
+Server = http://mirror.telepoint.bg/archlinux/$repo/os/$arch
+Server = https://mirrors.uni-plovdiv.net/archlinux/$repo/os/$arch
+Server = http://mirror.host.ag/archlinux/$repo/os/$arch
+Server = https://mirror.telepoint.bg/archlinux/$repo/os/$arch
+Server = http://mirrors.uni-plovdiv.net/archlinux/$repo/os/$arch
+
+
+## Poland
+Server = https://ftp.psnc.pl/linux/archlinux/$repo/os/$arch
+Server = https://arch.midov.pl/arch/$repo/os/$arch
+Server = http://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch
+Server = https://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch
+Server = https://arch.sakamoto.pl/$repo/os/$arch
+Server = http://ftp.psnc.pl/linux/archlinux/$repo/os/$arch
+Server = http://arch.midov.pl/arch/$repo/os/$arch
+Server = http://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch
+Server = https://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch
+Server = https://mirror.przekichane.pl/archlinux/$repo/os/$arch
+Server = http://mirror.alldaydev.com/archlinux/$repo/os/$arch
+Server = https://mirror.alldaydev.com/archlinux/$repo/os/$arch
+Server = http://arch.sakamoto.pl/$repo/os/$arch
+
+
+## Romania
+Server = https://mirrors.pidginhost.com/arch/$repo/os/$arch
+Server = https://mirrors.nxthost.com/archlinux/$repo/os/$arch
+Server = http://mirrors.pidginhost.com/arch/$repo/os/$arch
+Server = http://mirrors.nxthost.com/archlinux/$repo/os/$arch
+Server = https://ro.arch.niranjan.co/$repo/os/$arch
+Server = https://ro.mirror.flokinet.net/archlinux/$repo/os/$arch
+Server = https://mirrors.hostico.ro/archlinux/$repo/os/$arch
+Server = https://mirrors.chroot.ro/archlinux/$repo/os/$arch
+Server = http://mirrors.nav.ro/archlinux/$repo/os/$arch
+Server = https://mirror.efect.ro/archlinux/$repo/os/$arch
+Server = http://mirrors.hostico.ro/archlinux/$repo/os/$arch
+Server = http://ro.mirror.flokinet.net/archlinux/$repo/os/$arch
+Server = http://archlinux.mirrors.linux.ro/$repo/os/$arch
+Server = http://mirror.efect.ro/archlinux/$repo/os/$arch
+Server = https://mirrors.hosterion.ro/archlinux/$repo/os/$arch
+Server = http://mirrors.hosterion.ro/archlinux/$repo/os/$arch
+Server = http://mirrors.chroot.ro/archlinux/$repo/os/$arch
+
+
+## Ukraine
+Server = https://mirror.hostiko.network/archlinux/$repo/os/$arch
+Server = http://mirror.hostiko.network/archlinux/$repo/os/$arch
+Server = https://mirror.mirohost.net/archlinux/$repo/os/$arch
+Server = http://repo.hyron.dev/archlinux/$repo/os/$arch
+Server = https://repo.hyron.dev/archlinux/$repo/os/$arch
+Server = https://archlinux.ip-connect.vn.ua/$repo/os/$arch
+Server = http://distrohub.kyiv.ua/archlinux/$repo/os/$arch
+Server = https://distrohub.kyiv.ua/archlinux/$repo/os/$arch
+Server = http://mirror.mirohost.net/archlinux/$repo/os/$arch
+Server = https://mirrors.reitarovskyi.com.ua/archlinux/$repo/os/$arch
+Server = http://archlinux.ip-connect.vn.ua/$repo/os/$arch
+Server = http://mirrors.reitarovskyi.com.ua/archlinux/$repo/os/$arch

@@ -1,0 +1,19 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda2
+UUID=36da6199-b615-497e-8b58-5edf38ebf666	/         	btrfs     	rw,relatime,nodatasum,nodatacow,space_cache=v2,subvol=/@	0 0
+
+# /dev/sda2
+UUID=36da6199-b615-497e-8b58-5edf38ebf666	/home     	btrfs     	rw,relatime,nodatasum,nodatacow,space_cache=v2,subvol=/@home	0 0
+
+# /dev/sda2
+UUID=36da6199-b615-497e-8b58-5edf38ebf666	/var/cache/pacman/pkg	btrfs     	rw,relatime,nodatasum,nodatacow,space_cache=v2,subvol=/@pkg	0 0
+
+# /dev/sda2
+UUID=36da6199-b615-497e-8b58-5edf38ebf666	/var/log  	btrfs     	rw,relatime,nodatasum,nodatacow,space_cache=v2,subvol=/@log	0 0
+
+# /dev/sda1
+UUID=F67A-31EF      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
