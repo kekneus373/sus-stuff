@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# ---        NixOS-HP configuration file from 25.09.2026 18:44.        ---
+# ---        NixOS-HP configuration file from 18.10.2026 23:46.        ---
 # ------------------------------------------------------------------------
 # Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
@@ -63,11 +63,11 @@ in {
     extraLocaleSettings = {
       LC_ADDRESS = "en_US.UTF-8";
       LC_IDENTIFICATION = "en_US.UTF-8";
-      LC_MEASUREMENT = "en_US.UTF-8";
+      LC_MEASUREMENT = "uk_UA.UTF-8";
       LC_MONETARY = "en_US.UTF-8";
       LC_NAME = "en_US.UTF-8";
-      LC_NUMERIC = "en_US.UTF-8";
-      LC_PAPER = "en_US.UTF-8";
+      LC_NUMERIC = "uk_UA.UTF-8";
+      LC_PAPER = "uk_UA.UTF-8";
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
@@ -143,6 +143,7 @@ in {
     extraGroups = [ "wheel" "camera" "media" "audio" "video" "render" "kvm" "lp" "lpadmin" "wireshark" ];
     packages = with pkgs; [
       aria2
+      aw-server-rust awatcher
       apktool
       android-tools
       uget
@@ -259,10 +260,11 @@ in {
       "printer-driver-xprinter"
    ];
 
-  # Virtualization support.
+  # Virtualization support w/USB redirection.
   environment.localBinInPath = true;
-  virtualisation.libvirtd= {
-    enable = true;
+  virtualisation = {
+    libvirtd.enable = true;
+    spiceUSBRedirection.enable = true;
   };
 
   # Useful utilites.
@@ -283,6 +285,30 @@ in {
     gphoto2.enable = true;
   };
   services.geoclue2.enable = true;
+
+  # ActicityWatch + awatcher daemon for self-tracking.
+  systemd.user.services.awatcher-daemon = {
+    enable = true;
+    description = "ActivityWatch 3rd-party daemon";
+    wantedBy = [ "xdg-desktop-autostart.target" ];
+    serviceConfig = {
+      Type = "simple";
+      Restart = "on-failure";
+      ExecStart = "${lib.getBin pkgs.awatcher}/bin/awatcher";
+    };
+  };
+
+  systemd.user.services.awatcher-server = {
+    enable = true;
+    description = "ActivityWatch server";
+    wantedBy = [ "xdg-desktop-autostart.target" ];
+    serviceConfig = {
+      Type = "simple";
+      Restart = "on-failure";
+      ExecStartPre = "${lib.getBin pkgs.coreutils}/bin/sleep 10";
+      ExecStart = "${lib.getBin pkgs.aw-server-rust}/bin/aw-server";
+    };
+  };
 
   # Remote filesystems support.
   services.gvfs.enable = true;
