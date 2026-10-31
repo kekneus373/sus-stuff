@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# ---        NixOS-HP configuration file from 18.10.2026 23:46.        ---
+# ---        NixOS-HP configuration file from 19.10.2026 13:02.        ---
 # ------------------------------------------------------------------------
 # Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
@@ -164,6 +164,10 @@ in {
       czkawka
       curtail
       libreoffice-qt6-fresh
+      hunspell
+      hunspellDicts.uk_UA
+      hunspellDicts.en_US-large
+      hunspellDicts.en_GB-large
       onlyoffice-desktopeditors
       vlc
       handbrake
